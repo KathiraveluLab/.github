@@ -1,1 +1,1 @@
-## Welcome to the KathiraveluLab GitHub Organization.
+## Welcome to the Kathiravelu Lab GitHub Organization.
