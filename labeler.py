@@ -16,6 +16,9 @@ issue_number = os.getenv("ISSUE_NUMBER")
 repo = os.getenv("REPO")
 token = os.getenv("GITHUB_TOKEN")
 
+if not all([issue_number, repo, token]):
+    raise ValueError("Missing required environment variables: ISSUE_NUMBER, REPO, GITHUB_TOKEN")
+
 text = f"{title}\n{body}"
 
 # ---- PROMPT ----
