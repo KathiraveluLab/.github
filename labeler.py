@@ -81,6 +81,7 @@ headers = {
 }
 
 response = requests.post(url, json={"labels": labels}, headers=headers)
+response.raise_for_status()
 
 print("STATUS:", response.status_code)
 print("RESPONSE:", response.text)
