@@ -16,6 +16,9 @@ issue_number = os.getenv("ISSUE_NUMBER")
 repo = os.getenv("REPO")
 token = os.getenv("GITHUB_TOKEN")
 
+if not all([issue_number, repo, token]):
+    raise ValueError("Missing required environment variables: ISSUE_NUMBER, REPO, GITHUB_TOKEN")
+
 text = f"{title}\n{body}"
 
 # ---- PROMPT ----
@@ -78,6 +81,7 @@ headers = {
 }
 
 response = requests.post(url, json={"labels": labels}, headers=headers)
+response.raise_for_status()
 
 print("STATUS:", response.status_code)
 print("RESPONSE:", response.text)
