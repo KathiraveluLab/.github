@@ -30,7 +30,7 @@ jobs:
       - name: Checkout central repo
         uses: actions/checkout@v3
         with:
-          repository: shivamyadav-org/.github
+          repository: KathiraveluLab/.github
           path: central
 
       - name: Setup Python
