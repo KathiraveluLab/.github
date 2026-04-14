@@ -1,0 +1,52 @@
+name: Reusable Issue Labeler
+
+on:
+  workflow_call:
+    inputs:
+      issue_title:
+        required: true
+        type: string
+      issue_body:
+        required: true
+        type: string
+      issue_number:
+        required: true
+        type: string
+      repo:
+        required: true
+        type: string
+    secrets:
+      GROQ_API_KEY:
+        required: true
+
+permissions:
+  issues: write
+
+jobs:
+  label:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout central repo
+        uses: actions/checkout@v3
+        with:
+          repository: shivamyadav-org/.github
+          path: central
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install deps
+        run: pip install requests openai
+
+      - name: Run labeler
+        run: python central/labeler.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          ISSUE_TITLE: ${{ inputs.issue_title }}
+          ISSUE_BODY: ${{ inputs.issue_body }}
+          ISSUE_NUMBER: ${{ inputs.issue_number }}
+          REPO: ${{ inputs.repo }}
