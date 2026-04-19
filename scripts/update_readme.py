@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
 """
 Update profile/README.md with a table of all KathiraveluLab org repositories
-and their primary programming languages.
+and their primary programming languages, plus a Mermaid pie chart of language
+distribution.
 
 Reads:  GH_TOKEN  — GitHub token (GITHUB_TOKEN from Actions is sufficient)
         ORG       — GitHub organization name (e.g. KathiraveluLab)
 
-Replaces the section between:
-    <!-- REPO-LIST:START -->
-    ...
-    <!-- REPO-LIST:END -->
-in profile/README.md with a fresh Markdown table.
+Replaces the sections between:
+    <!-- REPO-LIST:START --> ... <!-- REPO-LIST:END -->
+    <!-- LANG-CHART:START --> ... <!-- LANG-CHART:END -->
+in profile/README.md with fresh generated content.
 """
 
 import json
@@ -26,6 +26,9 @@ README_PATH = "profile/README.md"
 
 START_MARKER = "<!-- REPO-LIST:START -->"
 END_MARKER   = "<!-- REPO-LIST:END -->"
+
+CHART_START_MARKER = "<!-- LANG-CHART:START -->"
+CHART_END_MARKER   = "<!-- LANG-CHART:END -->"
 
 LANGUAGE_BADGE_COLORS = {
     "Python":     "3572A5",
@@ -111,18 +114,51 @@ def build_table(repos: list[dict]) -> str:
     return "\n".join(header + rows)
 
 
-def inject_into_readme(table: str) -> None:
+def build_pie_chart(repos: list[dict]) -> str:
+    """Return a Mermaid pie chart block for language distribution."""
+    from collections import Counter
+
+    lang_counts: Counter = Counter()
+    for r in repos:
+        if r.get("archived") or r.get("fork"):
+            continue
+        lang = r.get("language")
+        if lang:
+            lang_counts[lang] += 1
+        else:
+            lang_counts["Other / Unknown"] += 1
+
+    # Sort by count descending; fold tiny slices (<2 repos) into "Other"
+    other = 0
+    lines = []
+    for lang, count in lang_counts.most_common():
+        if count < 2:
+            other += count
+        else:
+            lines.append(f'    "{lang}" : {count}')
+    if other:
+        lines.append(f'    "Other" : {other}')
+
+    chart = "```mermaid\npie title Primary Languages Across Projects\n" + "\n".join(lines) + "\n```"
+    return chart
+
+
+def _replace_marker_section(content: str, start: str, end: str, body: str) -> str:
+    """Replace content between start/end markers, or append a new section."""
+    new_block = f"{start}\n{body}\n{end}"
+    if start in content:
+        pattern = re.escape(start) + ".*?" + re.escape(end)
+        return re.sub(pattern, new_block, content, flags=re.DOTALL)
+    # Markers missing — append at end
+    return content + f"\n\n{new_block}\n"
+
+
+def inject_into_readme(table: str, chart: str) -> None:
     with open(README_PATH, "r", encoding="utf-8") as f:
         content = f.read()
 
-    new_block = f"{START_MARKER}\n{table}\n{END_MARKER}"
-
-    if START_MARKER in content:
-        pattern = re.escape(START_MARKER) + ".*?" + re.escape(END_MARKER)
-        content = re.sub(pattern, new_block, content, flags=re.DOTALL)
-    else:
-        # Append section at the end if markers are missing
-        content += f"\n\n## 🔬 Projects\n\n{new_block}\n"
+    content = _replace_marker_section(content, START_MARKER, END_MARKER, table)
+    content = _replace_marker_section(content, CHART_START_MARKER, CHART_END_MARKER, chart)
 
     with open(README_PATH, "w", encoding="utf-8") as f:
         f.write(content)
@@ -134,7 +170,8 @@ def main() -> None:
     print(f"  → Found {len(repos)} total repos")
 
     table = build_table(repos)
-    inject_into_readme(table)
+    chart = build_pie_chart(repos)
+    inject_into_readme(table, chart)
     print("README updated successfully.")
 
 

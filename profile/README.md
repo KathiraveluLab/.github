@@ -54,3 +54,8 @@ We are part of the Alaska open-source ecosystem. We build open-source research f
 | [**XPD**](https://github.com/KathiraveluLab/XPD) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | XPD, a Mark-Compact Collector algorithm implementation for MMTk and a micro-benchmark for the GC algorithms in Java, named XPDBench. |  |
 | [**xSDN**](https://github.com/KathiraveluLab/xSDN) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | An expressive simulator for dynamic network flows. |  |
 <!-- REPO-LIST:END -->
+
+## 📊 Language Distribution
+
+<!-- LANG-CHART:START -->
+<!-- LANG-CHART:END -->
