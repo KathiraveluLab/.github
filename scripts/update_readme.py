@@ -202,7 +202,7 @@ def main() -> None:
     print(f"  → Found {len(repos)} total repos")
 
     table = build_table(repos)
-    chart = build_pie_chart(repos)
+    chart = build_lang_chart(repos)
     inject_into_readme(table, chart)
     print("README updated successfully.")
 
