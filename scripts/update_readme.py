@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
 """
-Update profile/README.md with a table of all KathiraveluLab org repositories
-and their primary programming languages, plus a Mermaid pie chart of language
-distribution.
+Update profile/README.md with a table of repositories, language distribution chart,
+and a highlight of top organization contributors.
 
 Reads:  GH_TOKEN  — GitHub token (GITHUB_TOKEN from Actions is sufficient)
         ORG       — GitHub organization name (e.g. KathiraveluLab)
 
 Replaces the sections between:
-    <!-- REPO-LIST:START --> ... <!-- REPO-LIST:END -->
-    <!-- LANG-CHART:START --> ... <!-- LANG-CHART:END -->
+    <!-- REPO-LIST:START -->    ... <!-- REPO-LIST:END -->
+    <!-- LANG-CHART:START -->   ... <!-- LANG-CHART:END -->
+    <!-- CONTRIBUTORS:START --> ... <!-- CONTRIBUTORS:END -->
 in profile/README.md with fresh generated content.
 """
 
@@ -29,6 +29,9 @@ END_MARKER   = "<!-- REPO-LIST:END -->"
 
 CHART_START_MARKER = "<!-- LANG-CHART:START -->"
 CHART_END_MARKER   = "<!-- LANG-CHART:END -->"
+
+CONTRIBUTORS_START_MARKER = "<!-- CONTRIBUTORS:START -->"
+CONTRIBUTORS_END_MARKER   = "<!-- CONTRIBUTORS:END -->"
 
 LANGUAGE_BADGE_COLORS = {
     "Python":     "3572A5",
@@ -175,6 +178,77 @@ def build_lang_chart(repos: list[dict]) -> str:
     return chart
 
 
+def fetch_contributors(repos: list[dict]) -> dict:
+    """
+    Fetch and aggregate contributors across all public repos.
+    Excludes bots.
+    """
+    from collections import defaultdict
+
+    stats = defaultdict(lambda: {"count": 0, "avatar": "", "url": ""})
+    active = [r for r in repos if not r.get("archived") and not r.get("fork")]
+    
+    print(f"  → Fetching contributors for {len(active)} repos…")
+    for r in active:
+        try:
+            # per_page=100 is usually enough for most org repos
+            data = gh_get(f"https://api.github.com/repos/{ORG}/{r['name']}/contributors?per_page=100")
+            for c in data:
+                login = c["login"]
+                if "[bot]" in login.lower():
+                    continue
+                
+                stats[login]["count"] += c["contributions"]
+                stats[login]["avatar"] = c["avatar_url"]
+                stats[login]["url"] = c["html_url"]
+        except Exception as exc:
+            print(f"    [warn] Could not fetch contributors for {r['name']}: {exc}")
+            
+    return dict(stats)
+
+
+def build_contributors_section(stats: dict, limit: int = 20) -> str:
+    """
+    Build a grid of top contributors.
+    """
+    top = sorted(stats.items(), key=lambda x: x[1]["count"], reverse=True)[:limit]
+    
+    if not top:
+        return "<!-- No contributors found -->"
+        
+    html = ['<table style="border-collapse: collapse; border: none;">']
+    row_count = 0
+    items_per_row = 5
+    
+    for login, info in top:
+        if row_count % items_per_row == 0:
+            if row_count > 0:
+                html.append("  </tr>")
+            html.append("  <tr>")
+            
+        cell = (
+            f'    <td align="center" style="border: none; padding: 10px;">'
+            f'<a href="{info["url"]}">'
+            f'<img src="{info["avatar"]}" width="100px;" alt="{login}" style="border-radius: 50%;"/><br />'
+            f'<sub><b>{login}</b></sub>'
+            f'</a><br />'
+            f'<sub>{info["count"]} contributions</sub>'
+            f'</td>'
+        )
+        html.append(cell)
+        row_count += 1
+        
+    # Fill empty cells in last row if needed
+    while row_count % items_per_row != 0:
+        html.append('    <td style="border: none;"></td>')
+        row_count += 1
+        
+    html.append("  </tr>")
+    html.append("</table>")
+    
+    return "\n".join(html)
+
+
 def _replace_marker_section(content: str, start: str, end: str, body: str) -> str:
     """Replace content between start/end markers, or append a new section."""
     new_block = f"{start}\n{body}\n{end}"
@@ -185,12 +259,13 @@ def _replace_marker_section(content: str, start: str, end: str, body: str) -> st
     return content + f"\n\n{new_block}\n"
 
 
-def inject_into_readme(table: str, chart: str) -> None:
+def inject_into_readme(table: str, chart: str, contributors: str) -> None:
     with open(README_PATH, "r", encoding="utf-8") as f:
         content = f.read()
 
     content = _replace_marker_section(content, START_MARKER, END_MARKER, table)
     content = _replace_marker_section(content, CHART_START_MARKER, CHART_END_MARKER, chart)
+    content = _replace_marker_section(content, CONTRIBUTORS_START_MARKER, CONTRIBUTORS_END_MARKER, contributors)
 
     with open(README_PATH, "w", encoding="utf-8") as f:
         f.write(content)
@@ -203,7 +278,11 @@ def main() -> None:
 
     table = build_table(repos)
     chart = build_lang_chart(repos)
-    inject_into_readme(table, chart)
+    
+    contrib_stats = fetch_contributors(repos)
+    contributors = build_contributors_section(contrib_stats, limit=20)
+    
+    inject_into_readme(table, chart, contributors)
     print("README updated successfully.")
 
 

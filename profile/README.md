@@ -66,3 +66,8 @@ xychart-beta horizontal
     bar [2018.87, 946.59, 446.9, 351.02, 199.85, 97.83, 86.29, 68.52, 58.73, 49.94, 27.33, 26.08, 14.47, 12.8, 9.6, 6.65, 2.58, 2.29, 2.09, 1.82, 1.17, 0.99, 0.26]
 ```
 <!-- LANG-CHART:END -->
+
+## 🏆 Top Contributors
+
+<!-- CONTRIBUTORS:START -->
+<!-- CONTRIBUTORS:END -->
