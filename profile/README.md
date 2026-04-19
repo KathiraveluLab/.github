@@ -5,7 +5,7 @@ We are part of the Alaska open-source ecosystem. We build open-source research f
 ## 🔬 Projects
 
 <!-- REPO-LIST:START -->
-> Last updated: 2026-04-19 20:59 UTC · 44 active public repositories
+> Last updated: 2026-04-19 21:03 UTC · 44 active public repositories
 
 | Repository | Language | Description | Stars | Forks |
 | --- | :---: | --- | :---: | :---: |
@@ -59,17 +59,29 @@ We are part of the Alaska open-source ecosystem. We build open-source research f
 
 <!-- LANG-CHART:START -->
 ```mermaid
-pie title Primary Languages Across Projects
-    "Java" : 16
-    "Python" : 6
-    "Mojo" : 3
-    "Erlang" : 3
-    "TypeScript" : 1
-    "Rust" : 1
-    "Jupyter Notebook" : 1
-    "Cairo" : 1
-    "Go" : 1
-    "Elixir" : 1
-    "JavaScript" : 1
+pie title Language Distribution Across Projects (by code volume)
+    "Java (45.5%)" : 2018.87
+    "Python (21.3%)" : 946.13
+    "Jupyter Notebook (10.1%)" : 446.9
+    "TypeScript (7.9%)" : 351.02
+    "HTML (4.5%)" : 199.85
+    "Cairo (2.2%)" : 97.83
+    "Elixir (1.9%)" : 86.29
+    "Erlang (1.5%)" : 68.52
+    "CSS (1.3%)" : 58.73
+    "Mojo (1.1%)" : 49.94
+    "Go (0.6%)" : 27.33
+    "Rust (0.6%)" : 26.08
+    "Shell (0.3%)" : 14.47
+    "JavaScript (0.3%)" : 12.8
+    "PowerShell (0.2%)" : 9.6
+    "Solidity (0.1%)" : 6.65
+    "C (0.1%)" : 2.58
+    "TeX (0.1%)" : 2.29
+    "Batchfile (0.0%)" : 2.09
+    "Gnuplot (0.0%)" : 1.82
+    "Dockerfile (0.0%)" : 1.17
+    "Makefile (0.0%)" : 0.99
+    "Leo (0.0%)" : 0.26
 ```
 <!-- LANG-CHART:END -->
