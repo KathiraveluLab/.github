@@ -125,19 +125,13 @@ def build_pie_chart(repos: list[dict]) -> str:
         lang = r.get("language")
         if lang:
             lang_counts[lang] += 1
-        else:
-            lang_counts["Other / Unknown"] += 1
+        # repos with no detected language are excluded from the chart
 
-    # Sort by count descending; fold tiny slices (<2 repos) into "Other"
-    other = 0
-    lines = []
-    for lang, count in lang_counts.most_common():
-        if count < 2:
-            other += count
-        else:
-            lines.append(f'    "{lang}" : {count}')
-    if other:
-        lines.append(f'    "Other" : {other}')
+    # All languages shown individually, sorted by count descending
+    lines = [
+        f'    "{lang}" : {count}'
+        for lang, count in lang_counts.most_common()
+    ]
 
     chart = "```mermaid\npie title Primary Languages Across Projects\n" + "\n".join(lines) + "\n```"
     return chart
