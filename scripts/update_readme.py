@@ -53,7 +53,7 @@ LANGUAGE_BADGE_COLORS = {
 DEFAULT_COLOR = "8A8A8A"
 
 
-def gh_get(url: str) -> list | dict:
+def gh_get(url: str, return_headers: bool = False) -> list | dict | tuple:
     req = urllib.request.Request(
         url,
         headers={
@@ -63,7 +63,33 @@ def gh_get(url: str) -> list | dict:
         },
     )
     with urllib.request.urlopen(req) as resp:
-        return json.loads(resp.read())
+        data = json.loads(resp.read())
+        if return_headers:
+            return data, resp.headers
+        return data
+
+
+def get_repo_commit_count(repo_name: str) -> int:
+    """
+    Get the exact total commit count for a repository using the 'Link' header trick.
+    """
+    url = f"https://api.github.com/repos/{ORG}/{repo_name}/commits?per_page=1"
+    try:
+        data, headers = gh_get(url, return_headers=True)
+        links = headers.get("Link", "")
+        if not links:
+            return len(data)
+            
+        # Look for the 'last' relation: <...&page=123>; rel="last"
+        match = re.search(r'page=(\d+)>; rel="last"', links)
+        if match:
+            return int(match.group(1))
+        
+        # If no 'last' but there is a link header, we might be at the end or have few results
+        return len(data)
+    except Exception as exc:
+        print(f"    [warn] Could not fetch hard commit count for {repo_name}: {exc}")
+        return 0
 
 
 def fetch_all_repos() -> list[dict]:
@@ -93,7 +119,7 @@ def language_badge(lang: str) -> str:
     )
 
 
-def build_table(repos: list[dict]) -> str:
+def build_table(repos: list[dict], project_commits: dict = None) -> str:
     rows = []
     for r in sorted(repos, key=lambda x: x["name"].lower()):
         if r.get("archived") or r.get("fork"):
@@ -104,15 +130,19 @@ def build_table(repos: list[dict]) -> str:
         desc = (r.get("description") or "").replace("|", "\\|")
         stars = r.get("stargazers_count", 0)
         forks = r.get("forks_count", 0)
+        commits = project_commits.get(r["name"], 0) if project_commits else 0
+        
         star_str = f"⭐ {stars}" if stars else ""
         fork_str = f"🍴 {forks}" if forks else ""
-        rows.append(f"| {name} | {badge} | {desc} | {star_str} | {fork_str} |")
+        commits_str = f"🚀 {commits}" if commits else ""
+        
+        rows.append(f"| {name} | {badge} | {desc} | {star_str} | {fork_str} | {commits_str} |")
 
     updated = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     header = [
         f"> Last updated: {updated} · {len(rows)} active public repositories\n",
-        "| Repository | Language | Description | Stars | Forks |",
-        "| --- | :---: | --- | :---: | :---: |",
+        "| Repository | Language | Description | Stars | Forks | Commits |",
+        "| --- | :---: | --- | :---: | :---: | :---: |",
     ]
     return "\n".join(header + rows)
 
@@ -178,33 +208,42 @@ def build_lang_chart(repos: list[dict]) -> str:
     return chart
 
 
-def fetch_contributors(repos: list[dict]) -> dict:
+def fetch_contributors(repos: list[dict]) -> tuple[dict, dict]:
     """
     Fetch and aggregate contributors across all public repos.
     Excludes bots.
+    Returns (user_stats_dict, project_commits_dict)
     """
     from collections import defaultdict
 
-    stats = defaultdict(lambda: {"count": 0, "avatar": "", "url": ""})
+    user_stats = defaultdict(lambda: {"count": 0, "avatar": "", "url": ""})
+    project_commits = {}
     active = [r for r in repos if not r.get("archived") and not r.get("fork")]
     
     print(f"  → Fetching contributors for {len(active)} repos…")
     for r in active:
+        repo_name = r["name"]
         try:
+            # 1. Get the "hard" commit count for the Project Table
+            project_commits[repo_name] = get_repo_commit_count(repo_name)
+
+            # 2. Get the contributor breakdown for the Hall of Fame
             # per_page=100 is usually enough for most org repos
-            data = gh_get(f"https://api.github.com/repos/{ORG}/{r['name']}/contributors?per_page=100")
+            data = gh_get(f"https://api.github.com/repos/{ORG}/{repo_name}/contributors?per_page=100")
+            
             for c in data:
+                contributions = c["contributions"]
                 login = c["login"]
                 if "[bot]" in login.lower():
                     continue
                 
-                stats[login]["count"] += c["contributions"]
-                stats[login]["avatar"] = c["avatar_url"]
-                stats[login]["url"] = c["html_url"]
+                user_stats[login]["count"] += contributions
+                user_stats[login]["avatar"] = c["avatar_url"]
+                user_stats[login]["url"] = c["html_url"]
         except Exception as exc:
-            print(f"    [warn] Could not fetch contributors for {r['name']}: {exc}")
+            print(f"    [warn] Could not fetch data for {repo_name}: {exc}")
             
-    return dict(stats)
+    return dict(user_stats), project_commits
 
 
 def build_contributors_section(stats: dict, limit: int = 20) -> str:
@@ -276,10 +315,11 @@ def main() -> None:
     repos = fetch_all_repos()
     print(f"  → Found {len(repos)} total repos")
 
-    table = build_table(repos)
-    chart = build_lang_chart(repos)
+    # Fetch contribution data first so it can be used in the table
+    contrib_stats, project_commits = fetch_contributors(repos)
     
-    contrib_stats = fetch_contributors(repos)
+    table = build_table(repos, project_commits)
+    chart = build_lang_chart(repos)
     contributors = build_contributors_section(contrib_stats, limit=20)
     
     inject_into_readme(table, chart, contributors)
