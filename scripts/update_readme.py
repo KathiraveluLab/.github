@@ -53,7 +53,9 @@ LANGUAGE_BADGE_COLORS = {
 DEFAULT_COLOR = "8A8A8A"
 
 
-def gh_get(url: str, return_headers: bool = False) -> list | dict | tuple:
+def gh_get(url: str, return_headers: bool = False, retry_on_202: bool = True) -> list | dict | tuple:
+    import time
+    
     req = urllib.request.Request(
         url,
         headers={
@@ -62,11 +64,32 @@ def gh_get(url: str, return_headers: bool = False) -> list | dict | tuple:
             "X-GitHub-Api-Version": "2022-11-28",
         },
     )
-    with urllib.request.urlopen(req) as resp:
-        data = json.loads(resp.read())
-        if return_headers:
-            return data, resp.headers
-        return data
+    
+    max_retries = 3
+    for attempt in range(max_retries):
+        try:
+            with urllib.request.urlopen(req) as resp:
+                if resp.status == 202 and retry_on_202:
+                    print(f"    [info] Stats being computed for {url}, waiting... (attempt {attempt+1})")
+                    time.sleep(2)
+                    continue
+                
+                body = resp.read()
+                if not body:
+                    return ([], resp.headers) if return_headers else []
+                
+                data = json.loads(body)
+                if return_headers:
+                    return data, resp.headers
+                return data
+        except urllib.error.HTTPError as e:
+            if e.code == 202 and retry_on_202 and attempt < max_retries - 1:
+                time.sleep(2)
+                continue
+            raise e
+            
+    return ([], {}) if return_headers else []
+
 
 
 def get_repo_commit_count(repo_name: str) -> int:
@@ -361,20 +384,29 @@ def fetch_org_activity(repos: list[dict]) -> list[list[int]]:
     active = [r for r in repos if not r.get("archived") and not r.get("fork")]
     print(f"  → Fetching activity stats for {len(active)} repos…")
     
+    repos_with_data = 0
+    total_commits_found = 0
+    
     for r in active:
         try:
+            # Note: GitHub might return 202 (Handled in gh_get) or empty list if no activity
             data = gh_get(f"https://api.github.com/repos/{ORG}/{r['name']}/stats/commit_activity")
+            
             if not data or not isinstance(data, list):
                 continue
             
+            repos_with_data += 1
             for i, week_data in enumerate(data):
                 if i < 52:
-                    for d, count in enumerate(week_data.get("days", [])):
+                    days = week_data.get("days", [])
+                    for d, count in enumerate(days):
                         if d < 7:
                             aggregated[i][d] += count
+                            total_commits_found += count
         except Exception as exc:
-            pass # Stats might not be available for very new repos
+            print(f"    [warn] Could not fetch activity stats for {r['name']}: {exc}")
             
+    print(f"    [info] Aggregated activity from {repos_with_data} repos. Total commits in last year: {total_commits_found}")
     return aggregated
 
 
