@@ -5,7 +5,7 @@ We are part of the Alaska open-source ecosystem. We build open-source research f
 ## 🔬 Projects
 
 <!-- REPO-LIST:START -->
-> Last updated: 2026-04-19 21:03 UTC · 44 active public repositories
+> Last updated: 2026-04-19 21:09 UTC · 44 active public repositories
 
 | Repository | Language | Description | Stars | Forks |
 | --- | :---: | --- | :---: | :---: |
@@ -59,29 +59,10 @@ We are part of the Alaska open-source ecosystem. We build open-source research f
 
 <!-- LANG-CHART:START -->
 ```mermaid
-pie title Language Distribution Across Projects (by code volume)
-    "Java (45.5%)" : 2018.87
-    "Python (21.3%)" : 946.13
-    "Jupyter Notebook (10.1%)" : 446.9
-    "TypeScript (7.9%)" : 351.02
-    "HTML (4.5%)" : 199.85
-    "Cairo (2.2%)" : 97.83
-    "Elixir (1.9%)" : 86.29
-    "Erlang (1.5%)" : 68.52
-    "CSS (1.3%)" : 58.73
-    "Mojo (1.1%)" : 49.94
-    "Go (0.6%)" : 27.33
-    "Rust (0.6%)" : 26.08
-    "Shell (0.3%)" : 14.47
-    "JavaScript (0.3%)" : 12.8
-    "PowerShell (0.2%)" : 9.6
-    "Solidity (0.1%)" : 6.65
-    "C (0.1%)" : 2.58
-    "TeX (0.1%)" : 2.29
-    "Batchfile (0.0%)" : 2.09
-    "Gnuplot (0.0%)" : 1.82
-    "Dockerfile (0.0%)" : 1.17
-    "Makefile (0.0%)" : 0.99
-    "Leo (0.0%)" : 0.26
+xychart-beta horizontal
+    title "Language Distribution by Code Volume (KB)"
+    x-axis ["Java (45.5%)", "Python (21.4%)", "Jupyter Notebook (10.1%)", "TypeScript (7.9%)", "HTML (4.5%)", "Cairo (2.2%)", "Elixir (1.9%)", "Erlang (1.5%)", "CSS (1.3%)", "Mojo (1.1%)", "Go (0.6%)", "Rust (0.6%)", "Shell (0.3%)", "JavaScript (0.3%)", "PowerShell (0.2%)", "Solidity (0.1%)", "C (0.1%)", "TeX (0.1%)", "Batchfile (0.0%)", "Gnuplot (0.0%)", "Dockerfile (0.0%)", "Makefile (0.0%)", "Leo (0.0%)"]
+    y-axis "KB"
+    bar [2018.87, 946.59, 446.9, 351.02, 199.85, 97.83, 86.29, 68.52, 58.73, 49.94, 27.33, 26.08, 14.47, 12.8, 9.6, 6.65, 2.58, 2.29, 2.09, 1.82, 1.17, 0.99, 0.26]
 ```
 <!-- LANG-CHART:END -->
