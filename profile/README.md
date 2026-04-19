@@ -5,7 +5,7 @@ We are part of the Alaska open-source ecosystem. We build open-source research f
 ## 🔬 Projects
 
 <!-- REPO-LIST:START -->
-> Last updated: 2026-04-19 20:57 UTC · 44 active public repositories
+> Last updated: 2026-04-19 20:59 UTC · 44 active public repositories
 
 | Repository | Language | Description | Stars | Forks |
 | --- | :---: | --- | :---: | :---: |
@@ -61,10 +61,15 @@ We are part of the Alaska open-source ecosystem. We build open-source research f
 ```mermaid
 pie title Primary Languages Across Projects
     "Java" : 16
-    "Other / Unknown" : 9
     "Python" : 6
     "Mojo" : 3
     "Erlang" : 3
-    "Other" : 7
+    "TypeScript" : 1
+    "Rust" : 1
+    "Jupyter Notebook" : 1
+    "Cairo" : 1
+    "Go" : 1
+    "Elixir" : 1
+    "JavaScript" : 1
 ```
 <!-- LANG-CHART:END -->
