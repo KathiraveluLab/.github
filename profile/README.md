@@ -5,7 +5,7 @@ We are part of the Alaska open-source ecosystem. We build open-source research f
 ## 🔬 Projects
 
 <!-- REPO-LIST:START -->
-> Last updated: 2026-04-19 21:09 UTC · 44 active public repositories
+> Last updated: 2026-04-19 21:18 UTC · 44 active public repositories
 
 | Repository | Language | Description | Stars | Forks |
 | --- | :---: | --- | :---: | :---: |
@@ -63,11 +63,41 @@ xychart-beta horizontal
     title "Language Distribution by Code Volume (KB)"
     x-axis ["Java (45.5%)", "Python (21.4%)", "Jupyter Notebook (10.1%)", "TypeScript (7.9%)", "HTML (4.5%)", "Cairo (2.2%)", "Elixir (1.9%)", "Erlang (1.5%)", "CSS (1.3%)", "Mojo (1.1%)", "Go (0.6%)", "Rust (0.6%)", "Shell (0.3%)", "JavaScript (0.3%)", "PowerShell (0.2%)", "Solidity (0.1%)", "C (0.1%)", "TeX (0.1%)", "Batchfile (0.0%)", "Gnuplot (0.0%)", "Dockerfile (0.0%)", "Makefile (0.0%)", "Leo (0.0%)"]
     y-axis "KB"
-    bar [2018.87, 946.59, 446.9, 351.02, 199.85, 97.83, 86.29, 68.52, 58.73, 49.94, 27.33, 26.08, 14.47, 12.8, 9.6, 6.65, 2.58, 2.29, 2.09, 1.82, 1.17, 0.99, 0.26]
+    bar [2018.87, 949.34, 446.9, 351.02, 199.85, 97.83, 86.29, 68.52, 58.73, 49.94, 27.33, 26.08, 14.47, 12.8, 9.6, 6.65, 2.58, 2.29, 2.09, 1.82, 1.17, 0.99, 0.26]
 ```
 <!-- LANG-CHART:END -->
 
 ## 🏆 Top Contributors
 
 <!-- CONTRIBUTORS:START -->
+<table style="border-collapse: collapse; border: none;">
+  <tr>
+    <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/pradeeban"><img src="https://avatars.githubusercontent.com/u/225631?v=4" width="100px;" alt="pradeeban" style="border-radius: 50%;"/><br /><sub><b>pradeeban</b></sub></a><br /><sub>1741 contributions</sub></td>
+    <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/iprasannamb"><img src="https://avatars.githubusercontent.com/u/187874908?v=4" width="100px;" alt="iprasannamb" style="border-radius: 50%;"/><br /><sub><b>iprasannamb</b></sub></a><br /><sub>201 contributions</sub></td>
+    <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/mdxabu"><img src="https://avatars.githubusercontent.com/u/115330277?v=4" width="100px;" alt="mdxabu" style="border-radius: 50%;"/><br /><sub><b>mdxabu</b></sub></a><br /><sub>188 contributions</sub></td>
+    <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/shivamyadavrgipt"><img src="https://avatars.githubusercontent.com/u/164716426?v=4" width="100px;" alt="shivamyadavrgipt" style="border-radius: 50%;"/><br /><sub><b>shivamyadavrgipt</b></sub></a><br /><sub>165 contributions</sub></td>
+    <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/01bps"><img src="https://avatars.githubusercontent.com/u/129797926?v=4" width="100px;" alt="01bps" style="border-radius: 50%;"/><br /><sub><b>01bps</b></sub></a><br /><sub>100 contributions</sub></td>
+  </tr>
+  <tr>
+    <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/ayusrjn"><img src="https://avatars.githubusercontent.com/u/62194744?v=4" width="100px;" alt="ayusrjn" style="border-radius: 50%;"/><br /><sub><b>ayusrjn</b></sub></a><br /><sub>80 contributions</sub></td>
+    <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/Pragya-rathal"><img src="https://avatars.githubusercontent.com/u/181625845?v=4" width="100px;" alt="Pragya-rathal" style="border-radius: 50%;"/><br /><sub><b>Pragya-rathal</b></sub></a><br /><sub>75 contributions</sub></td>
+    <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/sk66641"><img src="https://avatars.githubusercontent.com/u/145834771?v=4" width="100px;" alt="sk66641" style="border-radius: 50%;"/><br /><sub><b>sk66641</b></sub></a><br /><sub>72 contributions</sub></td>
+    <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/Sahil-u07"><img src="https://avatars.githubusercontent.com/u/76817449?v=4" width="100px;" alt="Sahil-u07" style="border-radius: 50%;"/><br /><sub><b>Sahil-u07</b></sub></a><br /><sub>67 contributions</sub></td>
+    <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/ishaanxgupta"><img src="https://avatars.githubusercontent.com/u/124028055?v=4" width="100px;" alt="ishaanxgupta" style="border-radius: 50%;"/><br /><sub><b>ishaanxgupta</b></sub></a><br /><sub>66 contributions</sub></td>
+  </tr>
+  <tr>
+    <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/anish1206"><img src="https://avatars.githubusercontent.com/u/208164559?v=4" width="100px;" alt="anish1206" style="border-radius: 50%;"/><br /><sub><b>anish1206</b></sub></a><br /><sub>60 contributions</sub></td>
+    <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/ASHISH-JHA94"><img src="https://avatars.githubusercontent.com/u/136432304?v=4" width="100px;" alt="ASHISH-JHA94" style="border-radius: 50%;"/><br /><sub><b>ASHISH-JHA94</b></sub></a><br /><sub>60 contributions</sub></td>
+    <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/kartikeyg0104"><img src="https://avatars.githubusercontent.com/u/180191571?v=4" width="100px;" alt="kartikeyg0104" style="border-radius: 50%;"/><br /><sub><b>kartikeyg0104</b></sub></a><br /><sub>45 contributions</sub></td>
+    <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/Vamsi995"><img src="https://avatars.githubusercontent.com/u/52487689?v=4" width="100px;" alt="Vamsi995" style="border-radius: 50%;"/><br /><sub><b>Vamsi995</b></sub></a><br /><sub>25 contributions</sub></td>
+    <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/AbrhamYishak"><img src="https://avatars.githubusercontent.com/u/136889996?v=4" width="100px;" alt="AbrhamYishak" style="border-radius: 50%;"/><br /><sub><b>AbrhamYishak</b></sub></a><br /><sub>24 contributions</sub></td>
+  </tr>
+  <tr>
+    <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/KrishanYadav333"><img src="https://avatars.githubusercontent.com/u/132331252?v=4" width="100px;" alt="KrishanYadav333" style="border-radius: 50%;"/><br /><sub><b>KrishanYadav333</b></sub></a><br /><sub>24 contributions</sub></td>
+    <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/kallal79"><img src="https://avatars.githubusercontent.com/u/182690849?v=4" width="100px;" alt="kallal79" style="border-radius: 50%;"/><br /><sub><b>kallal79</b></sub></a><br /><sub>22 contributions</sub></td>
+    <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/sicaario"><img src="https://avatars.githubusercontent.com/u/191823428?v=4" width="100px;" alt="sicaario" style="border-radius: 50%;"/><br /><sub><b>sicaario</b></sub></a><br /><sub>21 contributions</sub></td>
+    <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/Rohhit333"><img src="https://avatars.githubusercontent.com/u/147081852?v=4" width="100px;" alt="Rohhit333" style="border-radius: 50%;"/><br /><sub><b>Rohhit333</b></sub></a><br /><sub>20 contributions</sub></td>
+    <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/zmz223"><img src="https://avatars.githubusercontent.com/u/65204992?v=4" width="100px;" alt="zmz223" style="border-radius: 50%;"/><br /><sub><b>zmz223</b></sub></a><br /><sub>18 contributions</sub></td>
+  </tr>
+</table>
 <!-- CONTRIBUTORS:END -->
