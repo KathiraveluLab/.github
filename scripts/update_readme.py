@@ -114,26 +114,44 @@ def build_table(repos: list[dict]) -> str:
     return "\n".join(header + rows)
 
 
+def fetch_language_bytes(repos: list[dict]) -> dict[str, int]:
+    """
+    Call /repos/{org}/{repo}/languages for every active repo and aggregate
+    byte counts across the entire org. This captures *all* languages in each
+    repo, not just the GitHub-detected primary language.
+    """
+    from collections import defaultdict
+
+    total: dict[str, int] = defaultdict(int)
+    active = [r for r in repos if not r.get("archived") and not r.get("fork")]
+    print(f"  → Fetching per-repo language breakdown for {len(active)} repos…")
+    for r in active:
+        try:
+            lang_data = gh_get(
+                f"https://api.github.com/repos/{ORG}/{r['name']}/languages"
+            )
+            for lang, byte_count in lang_data.items():
+                total[lang] += byte_count
+        except Exception as exc:
+            print(f"    [warn] Could not fetch languages for {r['name']}: {exc}")
+    return dict(total)
+
+
 def build_pie_chart(repos: list[dict]) -> str:
-    """Return a Mermaid pie chart block for language distribution."""
-    from collections import Counter
+    """Return a Mermaid pie chart block with byte-weighted language distribution."""
+    lang_bytes = fetch_language_bytes(repos)
 
-    lang_counts: Counter = Counter()
-    for r in repos:
-        if r.get("archived") or r.get("fork"):
-            continue
-        lang = r.get("language")
-        if lang:
-            lang_counts[lang] += 1
-        # repos with no detected language are excluded from the chart
+    if not lang_bytes:
+        return "<!-- no language data available -->"
 
-    # All languages shown individually, sorted by count descending
-    lines = [
-        f'    "{lang}" : {count}'
-        for lang, count in lang_counts.most_common()
-    ]
+    total_bytes = sum(lang_bytes.values())
+    lines = []
+    for lang, byte_count in sorted(lang_bytes.items(), key=lambda x: -x[1]):
+        kb = round(byte_count / 1024, 2)
+        pct = byte_count / total_bytes * 100
+        lines.append(f'    "{lang} ({pct:.1f}%)" : {kb}')
 
-    chart = "```mermaid\npie title Primary Languages Across Projects\n" + "\n".join(lines) + "\n```"
+    chart = "```mermaid\npie title Language Distribution Across Projects (by code volume)\n" + "\n".join(lines) + "\n```"
     return chart
 
 
