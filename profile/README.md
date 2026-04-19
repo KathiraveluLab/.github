@@ -67,6 +67,10 @@ xychart-beta horizontal
 ```
 <!-- LANG-CHART:END -->
 
+## 📈 Organization Activity
+
+![Activity Graph](activity_graph.svg)
+
 ## 🏆 Top Contributors
 
 <!-- CONTRIBUTORS:START -->

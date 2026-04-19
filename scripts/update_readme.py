@@ -288,6 +288,96 @@ def build_contributors_section(stats: dict, limit: int = 20) -> str:
     return "\n".join(html)
 
 
+def generate_contribution_svg(activity: list[list[int]]) -> str:
+    """
+    Render a GitHub-style contribution calendar as an SVG.
+    activity: 52 weeks, each a list of 7 daily sums.
+    """
+    # GitHub colors (Light Theme style)
+    COLORS = ["#ebedf0", "#9be9a8", "#40c463", "#216e39"] # simplified to 4 levels
+    
+    width = 800
+    height = 150
+    rect_size = 11
+    gap = 3
+    left_margin = 40
+    top_margin = 30
+    
+    # Calculate max daily count for scaling colors
+    all_days = [d for w in activity for d in w]
+    max_count = max(all_days) if all_days else 0
+    
+    svg_parts = [
+        f'<svg width="{width}" height="{height}" viewBox="0 0 {width} {height}" xmlns="http://www.w3.org/2000/svg">',
+        f'<style>text {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 10px; fill: #767676; }}</style>',
+        f'<text x="10" y="18" style="font-size: 12px; font-weight: bold; fill: #24292e;">{ORG} Activity (Last 12 Months)</text>'
+    ]
+    
+    # Weekday labels
+    days = ["Mon", "Wed", "Fri"]
+    for i, day in enumerate(days):
+        # We index 1, 3, 5 for Mon, Wed, Fri (GitHub style)
+        y = top_margin + (i * 2 + 1) * (rect_size + gap) + 9
+        svg_parts.append(f'<text x="5" y="{y}">{day}</text>')
+        
+    # Rectangles (weeks are columns)
+    for w, week_data in enumerate(activity):
+        x = left_margin + w * (rect_size + gap)
+        for d, count in enumerate(week_data):
+            y = top_margin + d * (rect_size + gap)
+            
+            # Determine color based on activity density
+            if count == 0:
+                color = COLORS[0]
+            elif max_count == 0:
+                color = COLORS[0]
+            else:
+                # 3 levels of intensity after empty
+                intensity = min(3, int((count / max_count) * 3) + 1)
+                color = COLORS[intensity]
+                
+            svg_parts.append(f'<rect x="{x}" y="{y}" width="{rect_size}" height="{rect_size}" fill="{color}" rx="2" ry="2"><title>{count} commits</title></rect>')
+
+    # Legend
+    svg_parts.append(f'<text x="{width - 160}" y="{height - 10}">Less</text>')
+    for i, color in enumerate(COLORS):
+        lx = width - 130 + i * (rect_size + gap)
+        ly = height - 20
+        svg_parts.append(f'<rect x="{lx}" y="{ly}" width="{rect_size}" height="{rect_size}" fill="{color}" rx="2" ry="2"></rect>')
+    svg_parts.append(f'<text x="{width - 70}" y="{height - 10}">More</text>')
+
+    svg_parts.append('</svg>')
+    return "\n".join(svg_parts)
+
+
+def fetch_org_activity(repos: list[dict]) -> list[list[int]]:
+    """
+    Fetch commit activity stats for all active repos.
+    Each repo returns a list of 52 weeks: {"total": int, "week": int, "days": [7 ints]}
+    """
+    # 52 weeks, 7 days each, initialized to 0
+    aggregated = [[0] * 7 for _ in range(52)]
+    
+    active = [r for r in repos if not r.get("archived") and not r.get("fork")]
+    print(f"  → Fetching activity stats for {len(active)} repos…")
+    
+    for r in active:
+        try:
+            data = gh_get(f"https://api.github.com/repos/{ORG}/{r['name']}/stats/commit_activity")
+            if not data or not isinstance(data, list):
+                continue
+            
+            for i, week_data in enumerate(data):
+                if i < 52:
+                    for d, count in enumerate(week_data.get("days", [])):
+                        if d < 7:
+                            aggregated[i][d] += count
+        except Exception as exc:
+            pass # Stats might not be available for very new repos
+            
+    return aggregated
+
+
 def _replace_marker_section(content: str, start: str, end: str, body: str) -> str:
     """Replace content between start/end markers, or append a new section."""
     new_block = f"{start}\n{body}\n{end}"
@@ -315,15 +405,24 @@ def main() -> None:
     repos = fetch_all_repos()
     print(f"  → Found {len(repos)} total repos")
 
-    # Fetch contribution data first so it can be used in the table
+    # 1. Table Data
     contrib_stats, project_commits = fetch_contributors(repos)
-    
     table = build_table(repos, project_commits)
+    
+    # 2. Activity Chart (Languages)
     chart = build_lang_chart(repos)
+    
+    # 3. Contributors Section
     contributors = build_contributors_section(contrib_stats, limit=20)
     
+    # 4. Org Activity SVG
+    activity_data = fetch_org_activity(repos)
+    svg_content = generate_contribution_svg(activity_data)
+    with open("profile/activity_graph.svg", "w", encoding="utf-8") as f:
+        f.write(svg_content)
+    
     inject_into_readme(table, chart, contributors)
-    print("README updated successfully.")
+    print("README and activity graph updated successfully.")
 
 
 if __name__ == "__main__":
