@@ -97,14 +97,16 @@ def build_table(repos: list[dict]) -> str:
         badge = language_badge(lang)
         desc = (r.get("description") or "").replace("|", "\\|")
         stars = r.get("stargazers_count", 0)
+        forks = r.get("forks_count", 0)
         star_str = f"⭐ {stars}" if stars else ""
-        rows.append(f"| {name} | {badge} | {desc} | {star_str} |")
+        fork_str = f"🍴 {forks}" if forks else ""
+        rows.append(f"| {name} | {badge} | {desc} | {star_str} | {fork_str} |")
 
     updated = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     header = [
         f"> Last updated: {updated} · {len(rows)} active public repositories\n",
-        "| Repository | Language | Description | Stars |",
-        "| --- | :---: | --- | :---: |",
+        "| Repository | Language | Description | Stars | Forks |",
+        "| --- | :---: | --- | :---: | :---: |",
     ]
     return "\n".join(header + rows)
 
