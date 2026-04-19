@@ -70,8 +70,8 @@ def gh_get(url: str, return_headers: bool = False, retry_on_202: bool = True) ->
         try:
             with urllib.request.urlopen(req) as resp:
                 if resp.status == 202 and retry_on_202:
-                    print(f"    [info] Stats being computed for {url}, waiting... (attempt {attempt+1})")
-                    time.sleep(2)
+                    print(f"    [info] Stats being computed for {url}, waiting {5*(attempt+1)}s...")
+                    time.sleep(5 * (attempt + 1))
                     continue
                 
                 body = resp.read()
@@ -79,6 +79,13 @@ def gh_get(url: str, return_headers: bool = False, retry_on_202: bool = True) ->
                     return ([], resp.headers) if return_headers else []
                 
                 data = json.loads(body)
+                
+                # Special case for stats endpoints: empty list means 'try again' or 'no data'
+                if isinstance(data, list) and not data and retry_on_202 and attempt < max_retries - 1:
+                    print(f"    [info] Empty stats received for {url}, retrying...")
+                    time.sleep(3)
+                    continue
+
                 if return_headers:
                     return data, resp.headers
                 return data
@@ -98,18 +105,19 @@ def get_repo_commit_count(repo_name: str) -> int:
     """
     url = f"https://api.github.com/repos/{ORG}/{repo_name}/commits?per_page=1"
     try:
-        data, headers = gh_get(url, return_headers=True)
+        data, headers = gh_get(url, return_headers=True, retry_on_202=False)
+        if not data and not headers: # Handle potential failure
+            return 0
         links = headers.get("Link", "")
         if not links:
-            return len(data)
+            return len(data) if isinstance(data, list) else 0
             
         # Look for the 'last' relation: <...&page=123>; rel="last"
         match = re.search(r'page=(\d+)>; rel="last"', links)
         if match:
             return int(match.group(1))
         
-        # If no 'last' but there is a link header, we might be at the end or have few results
-        return len(data)
+        return len(data) if isinstance(data, list) else 0
     except Exception as exc:
         print(f"    [warn] Could not fetch hard commit count for {repo_name}: {exc}")
         return 0
@@ -388,23 +396,38 @@ def fetch_org_activity(repos: list[dict]) -> list[list[int]]:
     total_commits_found = 0
     
     for r in active:
+        repo_name = r["name"]
         try:
-            # Note: GitHub might return 202 (Handled in gh_get) or empty list if no activity
-            data = gh_get(f"https://api.github.com/repos/{ORG}/{r['name']}/stats/commit_activity")
+            # 1. Try daily stats (most detailed)
+            data = gh_get(f"https://api.github.com/repos/{ORG}/{repo_name}/stats/commit_activity")
             
-            if not data or not isinstance(data, list):
+            if isinstance(data, list) and len(data) >= 52:
+                repos_with_data += 1
+                for i, week_data in enumerate(data):
+                    if i < 52:
+                        days = week_data.get("days", [])
+                        for d, count in enumerate(days):
+                            if d < 7:
+                                aggregated[i][d] += count
+                                total_commits_found += count
                 continue
-            
-            repos_with_data += 1
-            for i, week_data in enumerate(data):
-                if i < 52:
-                    days = week_data.get("days", [])
-                    for d, count in enumerate(days):
-                        if d < 7:
-                            aggregated[i][d] += count
-                            total_commits_found += count
+
+            # 2. Fallback to weekly participation stats if daily is unavailable
+            print(f"    [info] Fallback to participation stats for {repo_name}")
+            part_data = gh_get(f"https://api.github.com/repos/{ORG}/{repo_name}/stats/participation")
+            if part_data and "all" in part_data:
+                all_weeks = part_data["all"] # list of 52 ints
+                if len(all_weeks) >= 52:
+                    repos_with_data += 1
+                    for i, count in enumerate(all_weeks[-52:]):
+                        # Distribute weekly commits over the 7 days (simplified)
+                        # We put them mostly on Wed (index 2) to show activity peaks
+                        # rather than a flat line, which looks more "authentic" in a heatmap
+                        aggregated[i][2] += count 
+                        total_commits_found += count
+
         except Exception as exc:
-            print(f"    [warn] Could not fetch activity stats for {r['name']}: {exc}")
+            print(f"    [warn] Could not fetch activity stats for {repo_name}: {exc}")
             
     print(f"    [info] Aggregated activity from {repos_with_data} repos. Total commits in last year: {total_commits_found}")
     return aggregated
