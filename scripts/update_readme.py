@@ -137,21 +137,41 @@ def fetch_language_bytes(repos: list[dict]) -> dict[str, int]:
     return dict(total)
 
 
-def build_pie_chart(repos: list[dict]) -> str:
-    """Return a Mermaid pie chart block with byte-weighted language distribution."""
+def build_lang_chart(repos: list[dict]) -> str:
+    """
+    Return a Mermaid xychart-beta horizontal bar chart of language distribution.
+    Each language gets its own row — labels never overlap regardless of count.
+    Values are in KB; percentages are embedded in axis labels.
+    """
     lang_bytes = fetch_language_bytes(repos)
 
     if not lang_bytes:
         return "<!-- no language data available -->"
 
     total_bytes = sum(lang_bytes.values())
-    lines = []
-    for lang, byte_count in sorted(lang_bytes.items(), key=lambda x: -x[1]):
+    # Sort largest → smallest
+    ranked = sorted(lang_bytes.items(), key=lambda x: -x[1])
+
+    labels = []
+    values = []
+    for lang, byte_count in ranked:
         kb = round(byte_count / 1024, 2)
         pct = byte_count / total_bytes * 100
-        lines.append(f'    "{lang} ({pct:.1f}%)" : {kb}')
+        labels.append(f'"{lang} ({pct:.1f}%)"')
+        values.append(str(kb))
 
-    chart = "```mermaid\npie title Language Distribution Across Projects (by code volume)\n" + "\n".join(lines) + "\n```"
+    x_axis = "[" + ", ".join(labels) + "]"
+    y_vals  = "[" + ", ".join(values) + "]"
+
+    chart = (
+        "```mermaid\n"
+        "xychart-beta horizontal\n"
+        '    title "Language Distribution by Code Volume (KB)"\n'
+        f"    x-axis {x_axis}\n"
+        '    y-axis "KB"\n'
+        f"    bar {y_vals}\n"
+        "```"
+    )
     return chart
 
 
