@@ -7,11 +7,11 @@ We build open-source research frameworks in distributed systems, healthcare info
 ## 🔬 Projects
 
 <!-- REPO-LIST:START -->
-> Last updated: 2026-04-19 23:30 UTC · 44 active public repositories
+> Last updated: 2026-04-20 01:45 UTC · 45 active public repositories
 
 | Repository | Language | Description | Stars | Forks | Commits |
 | --- | :---: | --- | :---: | :---: | :---: |
-| [**.github**](https://github.com/KathiraveluLab/.github) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) |  | ⭐ 1 | 🍴 1 | 🚀 34 |
+| [**.github**](https://github.com/KathiraveluLab/.github) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) |  | ⭐ 1 | 🍴 1 | 🚀 35 |
 | [**Alaskan-Season-of-Code**](https://github.com/KathiraveluLab/Alaskan-Season-of-Code) | — | A repository to hold the project ideas and past and current participants of Alaskan Season of Code |  |  | 🚀 11 |
 | [**Ararat**](https://github.com/KathiraveluLab/Ararat) | ![Mojo](https://img.shields.io/badge/Mojo-FF6700?style=flat-square&logo=mojo&logoColor=white) | DHG Workflow Executor |  |  | 🚀 8 |
 | [**AWANTA**](https://github.com/KathiraveluLab/AWANTA) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | An SD-WAN framework for telehealth access | ⭐ 4 | 🍴 6 | 🚀 168 |
@@ -36,6 +36,7 @@ We build open-source research frameworks in distributed systems, healthcare info
 | [**GUARDA**](https://github.com/KathiraveluLab/GUARDA) | ![Elixir](https://img.shields.io/badge/Elixir-6E4A7E?style=flat-square&logo=elixir&logoColor=white) | Gateway for Uniform Access to Remote Data and Analytics |  |  | 🚀 9 |
 | [**IGUANA**](https://github.com/KathiraveluLab/IGUANA) | ![Erlang](https://img.shields.io/badge/Erlang-8A8A8A?style=flat-square&logo=erlang&logoColor=white) | Integrated Guardrails for Unbiased and Adaptive Neural Network Architectures |  |  | 🚀 93 |
 | [**L4SBOA**](https://github.com/KathiraveluLab/L4SBOA) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | L4S Bandwidth Orchestration Architecture | ⭐ 5 | 🍴 7 | 🚀 188 |
+| [**LAGOS**](https://github.com/KathiraveluLab/LAGOS) | ![Move](https://img.shields.io/badge/Move-8A8A8A?style=flat-square&logo=move&logoColor=white) | Latency-aware Accountable Governance for Overlay Scaling |  |  | 🚀 2 |
 | [**MEDIator**](https://github.com/KathiraveluLab/MEDIator) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | On-Demand Big Data Integration-as-a-Service: A Data Federation Framework for Reproducible Science |  | 🍴 1 | 🚀 342 |
 | [**messaging4transport**](https://github.com/KathiraveluLab/messaging4transport) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | Message Oriented Middleware for OpenDaylight MD-SAL |  |  | 🚀 23 |
 | [**Mojito**](https://github.com/KathiraveluLab/Mojito) | ![Mojo](https://img.shields.io/badge/Mojo-FF6700?style=flat-square&logo=mojo&logoColor=white) | Mojo-based Integrated Task Orchestrator |  |  | 🚀 4 |
@@ -63,9 +64,9 @@ We build open-source research frameworks in distributed systems, healthcare info
 ```mermaid
 xychart-beta horizontal
     title "Language Distribution by Code Volume (KB)"
-    x-axis ["Java (45.4%)", "Python (21.5%)", "Jupyter Notebook (10.1%)", "TypeScript (7.9%)", "HTML (4.5%)", "Cairo (2.2%)", "Elixir (1.9%)", "Erlang (1.5%)", "CSS (1.3%)", "Mojo (1.1%)", "Go (0.6%)", "Rust (0.6%)", "Shell (0.3%)", "JavaScript (0.3%)", "PowerShell (0.2%)", "Solidity (0.1%)", "C (0.1%)", "TeX (0.1%)", "Batchfile (0.0%)", "Gnuplot (0.0%)", "Dockerfile (0.0%)", "Makefile (0.0%)", "Leo (0.0%)"]
+    x-axis ["Java (45.4%)", "Python (21.5%)", "Jupyter Notebook (10.1%)", "TypeScript (7.9%)", "HTML (4.5%)", "Cairo (2.2%)", "Elixir (1.9%)", "Erlang (1.5%)", "CSS (1.3%)", "Mojo (1.1%)", "Go (0.6%)", "Rust (0.6%)", "Shell (0.3%)", "JavaScript (0.3%)", "PowerShell (0.2%)", "Solidity (0.1%)", "C (0.1%)", "TeX (0.1%)", "Batchfile (0.0%)", "Gnuplot (0.0%)", "Dockerfile (0.0%)", "Makefile (0.0%)", "Move (0.0%)", "Pony (0.0%)", "Gleam (0.0%)", "Roc (0.0%)", "Noir (0.0%)", "Leo (0.0%)"]
     y-axis "KB"
-    bar [2018.87, 957.37, 446.9, 351.02, 199.85, 97.83, 86.29, 68.52, 58.73, 49.94, 27.33, 26.08, 14.47, 12.8, 9.6, 6.65, 2.58, 2.29, 2.09, 1.82, 1.17, 0.99, 0.26]
+    bar [2018.87, 957.37, 446.9, 351.02, 199.85, 97.83, 86.29, 68.52, 58.73, 49.94, 27.33, 26.08, 14.47, 12.8, 9.6, 6.65, 2.58, 2.29, 2.09, 1.82, 1.17, 0.99, 0.95, 0.78, 0.68, 0.52, 0.39, 0.26]
 ```
 <!-- LANG-CHART:END -->
 
@@ -78,7 +79,7 @@ xychart-beta horizontal
 <!-- CONTRIBUTORS:START -->
 <table style="border-collapse: collapse; border: none;">
   <tr>
-    <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/pradeeban"><img src="https://avatars.githubusercontent.com/u/225631?v=4" width="100px;" alt="pradeeban" style="border-radius: 50%;"/><br /><sub><b>pradeeban</b></sub></a><br /><sub>1746 contributions</sub></td>
+    <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/pradeeban"><img src="https://avatars.githubusercontent.com/u/225631?v=4" width="100px;" alt="pradeeban" style="border-radius: 50%;"/><br /><sub><b>pradeeban</b></sub></a><br /><sub>1748 contributions</sub></td>
     <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/iprasannamb"><img src="https://avatars.githubusercontent.com/u/187874908?v=4" width="100px;" alt="iprasannamb" style="border-radius: 50%;"/><br /><sub><b>iprasannamb</b></sub></a><br /><sub>201 contributions</sub></td>
     <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/mdxabu"><img src="https://avatars.githubusercontent.com/u/115330277?v=4" width="100px;" alt="mdxabu" style="border-radius: 50%;"/><br /><sub><b>mdxabu</b></sub></a><br /><sub>188 contributions</sub></td>
     <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/shivamyadavrgipt"><img src="https://avatars.githubusercontent.com/u/164716426?v=4" width="100px;" alt="shivamyadavrgipt" style="border-radius: 50%;"/><br /><sub><b>shivamyadavrgipt</b></sub></a><br /><sub>165 contributions</sub></td>
