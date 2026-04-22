@@ -18,7 +18,7 @@ import os
 import re
 import urllib.request
 import urllib.error
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 
 ORG = os.environ.get("ORG", "KathiraveluLab")
 TOKEN = os.environ.get("GH_TOKEN", "")
@@ -32,6 +32,9 @@ CHART_END_MARKER   = "<!-- LANG-CHART:END -->"
 
 CONTRIBUTORS_START_MARKER = "<!-- CONTRIBUTORS:START -->"
 CONTRIBUTORS_END_MARKER   = "<!-- CONTRIBUTORS:END -->"
+
+ACTIVITY_START_MARKER = "<!-- ACTIVITY-CHART:START -->"
+ACTIVITY_END_MARKER   = "<!-- ACTIVITY-CHART:END -->"
 
 LANGUAGE_BADGE_COLORS = {
     "Python":     "3572A5",
@@ -96,6 +99,27 @@ def gh_get(url: str, return_headers: bool = False, retry_on_202: bool = True) ->
             raise e
             
     return ([], {}) if return_headers else []
+
+
+
+def gh_graphql(query: str, variables: dict) -> dict:
+    """Make a GitHub GraphQL API request."""
+    if not TOKEN:
+        return {}
+    req = urllib.request.Request(
+        "https://api.github.com/graphql",
+        data=json.dumps({"query": query, "variables": variables}).encode("utf-8"),
+        headers={
+            "Authorization": f"Bearer {TOKEN}",
+            "Content-Type": "application/json",
+        },
+    )
+    try:
+        with urllib.request.urlopen(req) as resp:
+            return json.loads(resp.read().decode("utf-8"))
+    except Exception as e:
+        print(f"    [error] GraphQL query failed: {e}")
+        return {}
 
 
 
@@ -433,6 +457,148 @@ def fetch_org_activity(repos: list[dict]) -> list[list[int]]:
     return aggregated
 
 
+def fetch_all_time_activity(repos: list[dict]) -> tuple[list[int], list[str]]:
+    """
+    Fetch all-time commit history across all repos via GraphQL.
+    Returns (weekly_counts, week_labels)
+    """
+    from collections import defaultdict
+    
+    # Org was founded Feb 2021. 
+    # Let's start the chart from Jan 1, 2021 for cleaner monthly alignment.
+    start_date = datetime(2021, 1, 1, tzinfo=timezone.utc)
+    now = datetime.now(timezone.utc)
+    
+    # Pre-calculate weeks
+    num_weeks = (now - start_date).days // 7 + 1
+    weekly_counts = [0] * num_weeks
+    week_labels = []
+    for i in range(num_weeks):
+        d = start_date + timedelta(weeks=i)
+        week_labels.append(d.strftime("%Y-%m-%d"))
+
+    query = """
+    query($owner: String!, $name: String!, $cursor: String) {
+      repository(owner: $owner, name: $name) {
+        defaultBranchRef {
+          target {
+            ... on Commit {
+              history(first: 100, after: $cursor) {
+                pageInfo { hasNextPage endCursor }
+                nodes { committedDate }
+              }
+            }
+          }
+        }
+      }
+    }
+    """
+
+    active = [r for r in repos if not r.get("archived") and not r.get("fork")]
+    print(f"  → Fetching all-time history for {len(active)} repos via GraphQL…")
+    
+    total_commits = 0
+    for r in active:
+        repo_name = r["name"]
+        cursor = None
+        has_next = True
+        repo_commits = 0
+        
+        # We limit the number of pages per repo to avoid hitting limits if a repo is huge
+        # 10 pages * 100 = 1000 commits per repo should be sufficient for most lab repos.
+        pages = 0
+        while has_next and pages < 20: 
+            result = gh_graphql(query, {"owner": ORG, "name": repo_name, "cursor": cursor})
+            pages += 1
+            
+            try:
+                history = result.get("data", {}).get("repository", {}).get("defaultBranchRef", {}).get("target", {}).get("history", {})
+                if not history:
+                    break
+                    
+                nodes = history.get("nodes", [])
+                for node in nodes:
+                    dt = datetime.fromisoformat(node["committedDate"].replace("Z", "+00:00"))
+                    if dt >= start_date:
+                        week_idx = (dt - start_date).days // 7
+                        if 0 <= week_idx < num_weeks:
+                            weekly_counts[week_idx] += 1
+                            total_commits += 1
+                            repo_commits += 1
+                
+                page_info = history.get("pageInfo", {})
+                has_next = page_info.get("hasNextPage", False)
+                cursor = page_info.get("endCursor")
+            except Exception as e:
+                print(f"    [warn] Error parsing history for {repo_name}: {e}")
+                break
+        
+        if repo_commits > 0:
+            print(f"    [info] Found {repo_commits} commits for {repo_name}")
+
+    print(f"    [info] Total all-time commits found: {total_commits}")
+    return weekly_counts, week_labels
+
+
+def generate_scrollable_bar_chart_svg(counts: list[int], labels: list[str]) -> str:
+    """
+    Render a wide scrollable bar chart as an SVG.
+    """
+    bar_width = 10
+    gap = 2
+    height = 200
+    top_margin = 40
+    bottom_margin = 40
+    left_margin = 10
+    
+    num_weeks = len(counts)
+    chart_width = left_margin + num_weeks * (bar_width + gap) + 40
+    max_count = max(counts) if counts else 1
+    if max_count == 0: max_count = 1
+    
+    # Main drawing area height
+    draw_height = height - top_margin - bottom_margin
+    
+    svg_parts = [
+        f'<svg width="{chart_width}" height="{height}" viewBox="0 0 {chart_width} {height}" xmlns="http://www.w3.org/2000/svg">',
+        f'<style>text {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 10px; fill: #767676; }} .bar:hover {{ fill: #40c463; }}</style>',
+        f'<rect width="{chart_width}" height="{height}" fill="#ffffff" />',
+        f'<text x="10" y="20" style="font-size: 14px; font-weight: bold; fill: #24292e;">Organization Activity History (Weekly Commits)</text>'
+    ]
+    
+    # Draw bars
+    for i, count in enumerate(counts):
+        if count == 0:
+            color = "#ebedf0"
+            bar_h = 2 # small placeholder
+        else:
+            # Color intensity scales slightly
+            # We use a nice blue-green gradient feel
+            intensity = min(1.0, count / (max_count * 0.7 + 1))
+            # interpolate between #9be9a8 and #216e39
+            color = "#40c463" if count > 0 else "#ebedf0"
+            bar_h = int((count / max_count) * draw_height)
+            if bar_h < 2: bar_h = 2
+            
+        x = left_margin + i * (bar_width + gap)
+        y = top_margin + (draw_height - bar_h)
+        
+        svg_parts.append(
+            f'<rect class="bar" x="{x}" y="{y}" width="{bar_width}" height="{bar_h}" fill="{color}" rx="1" ry="1">'
+            f'<title>Week of {labels[i]}: {count} commits</title></rect>'
+        )
+        
+        # Monthly labels
+        # Only show labels for the first week of a month
+        label_dt = datetime.strptime(labels[i], "%Y-%m-%d")
+        if label_dt.day <= 7:
+            month_name = label_dt.strftime("%b %Y") if label_dt.month == 1 else label_dt.strftime("%b")
+            svg_parts.append(f'<text x="{x}" y="{height - 15}" transform="rotate(45, {x}, {height - 15})">{month_name}</text>')
+
+    svg_parts.append('</svg>')
+    return "\n".join(svg_parts)
+
+
 def _replace_marker_section(content: str, start: str, end: str, body: str) -> str:
     """Replace content between start/end markers, or append a new section."""
     new_block = f"{start}\n{body}\n{end}"
@@ -443,13 +609,16 @@ def _replace_marker_section(content: str, start: str, end: str, body: str) -> st
     return content + f"\n\n{new_block}\n"
 
 
-def inject_into_readme(table: str, chart: str, contributors: str) -> None:
+def inject_into_readme(table: str, chart: str, contributors: str, activity_html: str = "") -> None:
     with open(README_PATH, "r", encoding="utf-8") as f:
         content = f.read()
 
     content = _replace_marker_section(content, START_MARKER, END_MARKER, table)
     content = _replace_marker_section(content, CHART_START_MARKER, CHART_END_MARKER, chart)
     content = _replace_marker_section(content, CONTRIBUTORS_START_MARKER, CONTRIBUTORS_END_MARKER, contributors)
+    
+    if activity_html:
+        content = _replace_marker_section(content, ACTIVITY_START_MARKER, ACTIVITY_END_MARKER, activity_html)
 
     with open(README_PATH, "w", encoding="utf-8") as f:
         f.write(content)
@@ -470,13 +639,25 @@ def main() -> None:
     # 3. Contributors Section
     contributors = build_contributors_section(contrib_stats, limit=20)
     
-    # 4. Org Activity SVG
-    activity_data = fetch_org_activity(repos)
-    svg_content = generate_contribution_svg(activity_data)
-    with open("profile/activity_graph.svg", "w", encoding="utf-8") as f:
+    # 4. All-Time Org Activity SVG
+    counts, labels = fetch_all_time_activity(repos)
+    svg_content = generate_scrollable_bar_chart_svg(counts, labels)
+    
+    # Ensure directory exists
+    os.makedirs(os.path.dirname(README_PATH), exist_ok=True)
+    svg_filename = "activity_graph.svg"
+    svg_path = os.path.join(os.path.dirname(README_PATH), svg_filename)
+    
+    with open(svg_path, "w", encoding="utf-8") as f:
         f.write(svg_content)
     
-    inject_into_readme(table, chart, contributors)
+    activity_html = (
+        f'<div style="overflow-x: auto; border: 1px solid #e1e4e8; border-radius: 6px; padding: 10px; margin-bottom: 20px;">\n'
+        f'  <img src="{svg_filename}" alt="Organization Activity History" style="max-width: none;" />\n'
+        f'</div>'
+    )
+    
+    inject_into_readme(table, chart, contributors, activity_html)
     print("README and activity graph updated successfully.")
 
 

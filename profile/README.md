@@ -72,7 +72,11 @@ xychart-beta horizontal
 
 ## 📈 Organization Activity
 
-![Activity Graph](activity_graph.svg)
+<!-- ACTIVITY-CHART:START -->
+<div style="overflow-x: auto; border: 1px solid #e1e4e8; border-radius: 6px; padding: 10px; margin-bottom: 20px;">
+  ![Activity Graph](activity_graph.svg)
+</div>
+<!-- ACTIVITY-CHART:END -->
 
 ## 🏆 Top Contributors
 
