@@ -84,7 +84,7 @@ xychart-beta horizontal
 </div>
 <!-- ACTIVITY-CHART:END -->
 
-## 🏆 Top Contributors
+## Frequent Contributors
 
 <!-- CONTRIBUTORS:START -->
 <table style="border-collapse: collapse; border: none;">
