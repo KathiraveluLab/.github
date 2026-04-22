@@ -74,7 +74,13 @@ xychart-beta horizontal
 
 <!-- ACTIVITY-CHART:START -->
 <div style="overflow-x: auto; border: 1px solid #e1e4e8; border-radius: 6px; padding: 10px; margin-bottom: 20px;">
-  <img src="activity_graph.svg" alt="Organization Activity History" style="max-width: none;" />
+  <table style="border: none; border-collapse: collapse;">
+    <tr>
+      <td style="border: none; padding: 0;">
+        <img src="activity_graph.svg" alt="Organization Activity History" width="3000" style="max-width: none;" />
+      </td>
+    </tr>
+  </table>
 </div>
 <!-- ACTIVITY-CHART:END -->
 

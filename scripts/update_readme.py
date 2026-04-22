@@ -540,9 +540,10 @@ def fetch_all_time_activity(repos: list[dict]) -> tuple[list[int], list[str]]:
     return weekly_counts, week_labels
 
 
-def generate_scrollable_bar_chart_svg(counts: list[int], labels: list[str]) -> str:
+def generate_scrollable_bar_chart_svg(counts: list[int], labels: list[str]) -> tuple[str, int]:
     """
     Render a wide scrollable bar chart as an SVG.
+    Returns (svg_content, chart_width)
     """
     bar_width = 10
     gap = 2
@@ -596,7 +597,7 @@ def generate_scrollable_bar_chart_svg(counts: list[int], labels: list[str]) -> s
             svg_parts.append(f'<text x="{x}" y="{height - 15}" transform="rotate(45, {x}, {height - 15})">{month_name}</text>')
 
     svg_parts.append('</svg>')
-    return "\n".join(svg_parts)
+    return "\n".join(svg_parts), chart_width
 
 
 def _replace_marker_section(content: str, start: str, end: str, body: str) -> str:
@@ -641,7 +642,7 @@ def main() -> None:
     
     # 4. All-Time Org Activity SVG
     counts, labels = fetch_all_time_activity(repos)
-    svg_content = generate_scrollable_bar_chart_svg(counts, labels)
+    svg_content, chart_width = generate_scrollable_bar_chart_svg(counts, labels)
     
     # Ensure directory exists
     os.makedirs(os.path.dirname(README_PATH), exist_ok=True)
@@ -653,7 +654,13 @@ def main() -> None:
     
     activity_html = (
         f'<div style="overflow-x: auto; border: 1px solid #e1e4e8; border-radius: 6px; padding: 10px; margin-bottom: 20px;">\n'
-        f'  <img src="{svg_filename}" alt="Organization Activity History" style="max-width: none;" />\n'
+        f'  <table style="border: none; border-collapse: collapse;">\n'
+        f'    <tr>\n'
+        f'      <td style="border: none; padding: 0;">\n'
+        f'        <img src="{svg_filename}" alt="Organization Activity History" width="{chart_width}" style="max-width: none;" />\n'
+        f'      </td>\n'
+        f'    </tr>\n'
+        f'  </table>\n'
         f'</div>'
     )
     
