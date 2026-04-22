@@ -7,11 +7,11 @@ We build open-source research frameworks in distributed systems, healthcare info
 ## 🔬 Projects
 
 <!-- REPO-LIST:START -->
-> Last updated: 2026-04-22 14:37 UTC · 45 active public repositories
+> Last updated: 2026-04-22 14:47 UTC · 45 active public repositories
 
 | Repository | Language | Description | Stars | Forks | Commits |
 | --- | :---: | --- | :---: | :---: | :---: |
-| [**.github**](https://github.com/KathiraveluLab/.github) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) |  | ⭐ 1 | 🍴 1 | 🚀 48 |
+| [**.github**](https://github.com/KathiraveluLab/.github) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) |  | ⭐ 1 | 🍴 1 | 🚀 50 |
 | [**Alaskan-Season-of-Code**](https://github.com/KathiraveluLab/Alaskan-Season-of-Code) | — | A repository to hold the project ideas and past and current participants of Alaskan Season of Code |  |  | 🚀 11 |
 | [**Ararat**](https://github.com/KathiraveluLab/Ararat) | ![Mojo](https://img.shields.io/badge/Mojo-FF6700?style=flat-square&logo=mojo&logoColor=white) | DHG Workflow Executor |  |  | 🚀 8 |
 | [**AWANTA**](https://github.com/KathiraveluLab/AWANTA) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | An SD-WAN framework for telehealth access | ⭐ 4 | 🍴 6 | 🚀 168 |
@@ -64,23 +64,17 @@ We build open-source research frameworks in distributed systems, healthcare info
 ```mermaid
 xychart-beta horizontal
     title "Language Distribution by Code Volume (KB)"
-    x-axis ["Java (44.9%)", "Python (21.5%)", "Jupyter Notebook (10.0%)", "TypeScript (7.8%)", "HTML (4.4%)", "Cairo (2.2%)", "Elixir (1.9%)", "Erlang (1.6%)", "CSS (1.3%)", "Mojo (1.1%)", "Go (0.6%)", "Rust (0.6%)", "Shell (0.5%)", "JavaScript (0.3%)", "Gleam (0.3%)", "PowerShell (0.2%)", "Batchfile (0.2%)", "Solidity (0.1%)", "Pony (0.1%)", "Roc (0.1%)", "C (0.1%)", "Move (0.1%)", "TeX (0.1%)", "Gnuplot (0.0%)", "Noir (0.0%)", "Dockerfile (0.0%)", "Makefile (0.0%)", "Leo (0.0%)"]
+    x-axis ["Java (45.0%)", "Python (21.5%)", "Jupyter Notebook (10.0%)", "TypeScript (7.8%)", "HTML (4.4%)", "Cairo (2.2%)", "Elixir (1.9%)", "Erlang (1.6%)", "CSS (1.3%)", "Mojo (1.1%)", "Go (0.6%)", "Rust (0.6%)", "Shell (0.5%)", "JavaScript (0.3%)", "Gleam (0.3%)", "PowerShell (0.2%)", "Batchfile (0.2%)", "Solidity (0.1%)", "Pony (0.1%)", "Roc (0.1%)", "C (0.1%)", "Move (0.1%)", "TeX (0.1%)", "Gnuplot (0.0%)", "Noir (0.0%)", "Dockerfile (0.0%)", "Makefile (0.0%)", "Leo (0.0%)"]
     y-axis "KB"
-    bar [2018.87, 966.05, 446.9, 351.5, 199.85, 98.07, 86.29, 69.74, 58.73, 49.94, 27.33, 26.08, 23.99, 12.8, 11.49, 9.6, 7.42, 6.65, 3.92, 3.24, 2.58, 2.45, 2.29, 1.82, 1.42, 1.17, 0.99, 0.27]
+    bar [2018.87, 965.94, 446.9, 351.5, 199.85, 98.07, 86.29, 69.74, 58.73, 49.94, 27.33, 26.08, 23.99, 12.8, 11.49, 9.6, 7.42, 6.65, 3.92, 3.24, 2.58, 2.45, 2.29, 1.82, 1.42, 1.17, 0.99, 0.27]
 ```
 <!-- LANG-CHART:END -->
 
 ## 📈 Organization Activity
 
 <!-- ACTIVITY-CHART:START -->
-<div style="overflow-x: auto; border: 1px solid #e1e4e8; border-radius: 6px; padding: 10px; margin-bottom: 20px;">
-  <table style="border: none; border-collapse: collapse;">
-    <tr>
-      <td style="border: none; padding: 0;">
-        <img src="activity_graph.svg" alt="Organization Activity History" width="3374" style="max-width: none;" />
-      </td>
-    </tr>
-  </table>
+<div align="center">
+  <img src="activity_graph.svg" alt="Organization Activity History" width="1138" style="max-width: none;" />
 </div>
 <!-- ACTIVITY-CHART:END -->
 
@@ -89,7 +83,7 @@ xychart-beta horizontal
 <!-- CONTRIBUTORS:START -->
 <table style="border-collapse: collapse; border: none;">
   <tr>
-    <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/pradeeban"><img src="https://avatars.githubusercontent.com/u/225631?v=4" width="100px;" alt="pradeeban" style="border-radius: 50%;"/><br /><sub><b>pradeeban</b></sub></a><br /><sub>1784 contributions</sub></td>
+    <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/pradeeban"><img src="https://avatars.githubusercontent.com/u/225631?v=4" width="100px;" alt="pradeeban" style="border-radius: 50%;"/><br /><sub><b>pradeeban</b></sub></a><br /><sub>1785 contributions</sub></td>
     <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/iprasannamb"><img src="https://avatars.githubusercontent.com/u/187874908?v=4" width="100px;" alt="iprasannamb" style="border-radius: 50%;"/><br /><sub><b>iprasannamb</b></sub></a><br /><sub>201 contributions</sub></td>
     <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/mdxabu"><img src="https://avatars.githubusercontent.com/u/115330277?v=4" width="100px;" alt="mdxabu" style="border-radius: 50%;"/><br /><sub><b>mdxabu</b></sub></a><br /><sub>188 contributions</sub></td>
     <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/shivamyadavrgipt"><img src="https://avatars.githubusercontent.com/u/164716426?v=4" width="100px;" alt="shivamyadavrgipt" style="border-radius: 50%;"/><br /><sub><b>shivamyadavrgipt</b></sub></a><br /><sub>165 contributions</sub></td>
