@@ -542,18 +542,18 @@ def fetch_all_time_activity(repos: list[dict]) -> tuple[list[int], list[str]]:
 
 def generate_scrollable_bar_chart_svg(counts: list[int], labels: list[str]) -> tuple[str, int]:
     """
-    Render a wide scrollable bar chart as an SVG.
+    Render a high-density bar chart as an SVG.
     Returns (svg_content, chart_width)
     """
-    bar_width = 10
-    gap = 2
-    height = 200
-    top_margin = 40
-    bottom_margin = 40
+    bar_width = 3
+    gap = 1
+    height = 250
+    top_margin = 50
+    bottom_margin = 50
     left_margin = 10
     
     num_weeks = len(counts)
-    chart_width = left_margin + num_weeks * (bar_width + gap) + 40
+    chart_width = left_margin + num_weeks * (bar_width + gap) + 20
     max_count = max(counts) if counts else 1
     if max_count == 0: max_count = 1
     
@@ -562,22 +562,18 @@ def generate_scrollable_bar_chart_svg(counts: list[int], labels: list[str]) -> t
     
     svg_parts = [
         f'<svg width="{chart_width}" height="{height}" viewBox="0 0 {chart_width} {height}" xmlns="http://www.w3.org/2000/svg">',
-        f'<style>text {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 10px; fill: #767676; }} .bar:hover {{ fill: #40c463; }}</style>',
+        f'<style>text {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 10px; fill: #767676; }} .year-label {{ font-size: 14px; font-weight: bold; fill: #24292e; }} .month-label {{ font-size: 9px; }} .bar:hover {{ fill: #40c463; }}</style>',
         f'<rect width="{chart_width}" height="{height}" fill="#ffffff" />',
-        f'<text x="10" y="20" style="font-size: 14px; font-weight: bold; fill: #24292e;">Organization Activity History (Weekly Commits)</text>'
+        f'<text x="10" y="25" style="font-size: 16px; font-weight: bold; fill: #24292e;">Organization Activity History (Total Commits)</text>'
     ]
     
     # Draw bars
     for i, count in enumerate(counts):
         if count == 0:
             color = "#ebedf0"
-            bar_h = 2 # small placeholder
+            bar_h = 2
         else:
-            # Color intensity scales slightly
-            # We use a nice blue-green gradient feel
-            intensity = min(1.0, count / (max_count * 0.7 + 1))
-            # interpolate between #9be9a8 and #216e39
-            color = "#40c463" if count > 0 else "#ebedf0"
+            color = "#40c463"
             bar_h = int((count / max_count) * draw_height)
             if bar_h < 2: bar_h = 2
             
@@ -585,16 +581,23 @@ def generate_scrollable_bar_chart_svg(counts: list[int], labels: list[str]) -> t
         y = top_margin + (draw_height - bar_h)
         
         svg_parts.append(
-            f'<rect class="bar" x="{x}" y="{y}" width="{bar_width}" height="{bar_h}" fill="{color}" rx="1" ry="1">'
+            f'<rect class="bar" x="{x}" y="{y}" width="{bar_width}" height="{bar_h}" fill="{color}" rx="0.5" ry="0.5">'
             f'<title>Week of {labels[i]}: {count} commits</title></rect>'
         )
         
-        # Monthly labels
-        # Only show labels for the first week of a month
+        # Date parsing for labels
         label_dt = datetime.strptime(labels[i], "%Y-%m-%d")
-        if label_dt.day <= 7:
-            month_name = label_dt.strftime("%b %Y") if label_dt.month == 1 else label_dt.strftime("%b")
-            svg_parts.append(f'<text x="{x}" y="{height - 15}" transform="rotate(45, {x}, {height - 15})">{month_name}</text>')
+        
+        # YEAR LABELS (Start of year)
+        if label_dt.month == 1 and label_dt.day <= 7:
+            svg_parts.append(f'<text x="{x}" y="{height - 10}" class="year-label">{label_dt.year}</text>')
+            # Vertical line for year boundary
+            svg_parts.append(f'<line x1="{x}" y1="{top_margin}" x2="{x}" y2="{height - 30}" stroke="#e1e4e8" stroke-dasharray="2,2" />')
+            
+        # MONTH LABELS (First week of month)
+        elif label_dt.day <= 7:
+            month_name = label_dt.strftime("%b")
+            svg_parts.append(f'<text x="{x}" y="{height - 30}" class="month-label" transform="rotate(45, {x}, {height - 30})">{month_name}</text>')
 
     svg_parts.append('</svg>')
     return "\n".join(svg_parts), chart_width
@@ -653,14 +656,8 @@ def main() -> None:
         f.write(svg_content)
     
     activity_html = (
-        f'<div style="overflow-x: auto; border: 1px solid #e1e4e8; border-radius: 6px; padding: 10px; margin-bottom: 20px;">\n'
-        f'  <table style="border: none; border-collapse: collapse;">\n'
-        f'    <tr>\n'
-        f'      <td style="border: none; padding: 0;">\n'
-        f'        <img src="{svg_filename}" alt="Organization Activity History" width="{chart_width}" style="max-width: none;" />\n'
-        f'      </td>\n'
-        f'    </tr>\n'
-        f'  </table>\n'
+        f'<div align="center">\n'
+        f'  <img src="{svg_filename}" alt="Organization Activity History" width="{chart_width}" style="max-width: none;" />\n'
         f'</div>'
     )
     
