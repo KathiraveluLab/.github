@@ -542,7 +542,7 @@ def fetch_all_time_activity(repos: list[dict]) -> tuple[list[int], list[str]]:
 
 def generate_scrollable_bar_chart_svg(counts: list[int], labels: list[str]) -> tuple[str, int]:
     """
-    Render a high-density bar chart as an SVG.
+    Render a high-density bar chart as an SVG with a labeled Y-axis.
     Returns (svg_content, chart_width)
     """
     bar_width = 3
@@ -550,7 +550,7 @@ def generate_scrollable_bar_chart_svg(counts: list[int], labels: list[str]) -> t
     height = 250
     top_margin = 50
     bottom_margin = 50
-    left_margin = 10
+    left_margin = 40 # Increased to accommodate Y-axis labels
     
     num_weeks = len(counts)
     chart_width = left_margin + num_weeks * (bar_width + gap) + 20
@@ -562,10 +562,22 @@ def generate_scrollable_bar_chart_svg(counts: list[int], labels: list[str]) -> t
     
     svg_parts = [
         f'<svg width="{chart_width}" height="{height}" viewBox="0 0 {chart_width} {height}" xmlns="http://www.w3.org/2000/svg">',
-        f'<style>text {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 10px; fill: #767676; }} .year-label {{ font-size: 14px; font-weight: bold; fill: #24292e; }} .month-label {{ font-size: 9px; }} .bar:hover {{ fill: #40c463; }}</style>',
+        f'<style>text {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 10px; fill: #767676; }} .year-label {{ font-size: 14px; font-weight: bold; fill: #24292e; }} .month-label {{ font-size: 9px; }} .bar:hover {{ fill: #40c463; }} .y-label {{ text-anchor: end; }}</style>',
         f'<rect width="{chart_width}" height="{height}" fill="#ffffff" />',
-        f'<text x="10" y="25" style="font-size: 16px; font-weight: bold; fill: #24292e;">Organization Activity History (Total Commits)</text>'
+        f'<text x="10" y="25" style="font-size: 16px; font-weight: bold; fill: #24292e;">Organization Activity History (Weekly Commits)</text>'
     ]
+    
+    # Draw Y-axis labels and horizontal grid lines
+    num_ticks = 5
+    for i in range(num_ticks):
+        val = int(max_count * i / (num_ticks - 1))
+        y = top_margin + draw_height - int((val / max_count) * draw_height)
+        svg_parts.append(f'<text x="{left_margin - 5}" y="{y + 4}" class="y-label">{val}</text>')
+        # Subtle horizontal grid lines
+        svg_parts.append(f'<line x1="{left_margin}" y1="{y}" x2="{chart_width - 10}" y2="{y}" stroke="#f0f0f0" />')
+    
+    # Vertical Y-axis line
+    svg_parts.append(f'<line x1="{left_margin}" y1="{top_margin}" x2="{left_margin}" y2="{height - bottom_margin}" stroke="#e1e4e8" />')
     
     # Draw bars
     for i, count in enumerate(counts):
