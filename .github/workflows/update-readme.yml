@@ -2,7 +2,7 @@ name: Update README with Org Projects
 
 on:
   schedule:
-    - cron: '0 0 * * *'   # daily at midnight UTC
+    - cron: '20 */12 * * *'  # every 12 hours at :20 to avoid peak load
   push:
     branches:
       - main
