@@ -359,6 +359,6 @@
 <rect class="bar" x="1136" y="50" width="3" height="150" fill="#40c463" rx="0.5" ry="0.5"><title>Week of 2026-04-03: 479 commits</title></rect>
 <text x="1136" y="220" class="month-label" transform="rotate(45, 1136, 220)">Apr</text>
 <rect class="bar" x="1140" y="133" width="3" height="67" fill="#40c463" rx="0.5" ry="0.5"><title>Week of 2026-04-10: 214 commits</title></rect>
-<rect class="bar" x="1144" y="133" width="3" height="67" fill="#40c463" rx="0.5" ry="0.5"><title>Week of 2026-04-17: 217 commits</title></rect>
-<rect class="bar" x="1148" y="185" width="3" height="15" fill="#40c463" rx="0.5" ry="0.5"><title>Week of 2026-04-24: 48 commits</title></rect>
+<rect class="bar" x="1144" y="131" width="3" height="69" fill="#40c463" rx="0.5" ry="0.5"><title>Week of 2026-04-17: 222 commits</title></rect>
+<rect class="bar" x="1148" y="175" width="3" height="25" fill="#40c463" rx="0.5" ry="0.5"><title>Week of 2026-04-24: 82 commits</title></rect>
 </svg>
