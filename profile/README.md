@@ -7,11 +7,11 @@ We build open-source research frameworks in distributed systems, healthcare info
 ## 🔬 Projects
 
 <!-- REPO-LIST:START -->
-> Last updated: 2026-04-29 14:34 UTC · 45 active public repositories
+> Last updated: 2026-04-30 04:07 UTC · 45 active public repositories
 
 | Repository | Language | Description | Stars | Forks | Commits |
 | --- | :---: | --- | :---: | :---: | :---: |
-| [**.github**](https://github.com/KathiraveluLab/.github) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) |  | ⭐ 1 | 🍴 1 | 🚀 63 |
+| [**.github**](https://github.com/KathiraveluLab/.github) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) |  | ⭐ 1 | 🍴 1 | 🚀 64 |
 | [**Alaskan-Season-of-Code**](https://github.com/KathiraveluLab/Alaskan-Season-of-Code) | — | A repository to hold the project ideas and past and current participants of Alaskan Season of Code |  |  | 🚀 11 |
 | [**Ararat**](https://github.com/KathiraveluLab/Ararat) | ![Mojo](https://img.shields.io/badge/Mojo-FF6700?style=flat-square&logo=mojo&logoColor=white) | DHG Workflow Executor |  |  | 🚀 12 |
 | [**AWANTA**](https://github.com/KathiraveluLab/AWANTA) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | An SD-WAN framework for telehealth access | ⭐ 4 | 🍴 6 | 🚀 175 |
@@ -20,7 +20,7 @@ We build open-source research frameworks in distributed systems, healthcare info
 | [**CAN**](https://github.com/KathiraveluLab/CAN) | ![Rust](https://img.shields.io/badge/Rust-DEA584?style=flat-square&logo=rust&logoColor=white) | Content-Aware-Networking |  |  | 🚀 8 |
 | [**Cassowary**](https://github.com/KathiraveluLab/Cassowary) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | Middleware Platform for Context-Aware Smart Buildings with Software-Defined Sensor Networks |  |  | 🚀 27 |
 | [**CHIEF**](https://github.com/KathiraveluLab/CHIEF) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | Controller Farm for Clouds of Software-Defined Community Networks |  |  | 🚀 20 |
-| [**Cloud2Sim**](https://github.com/KathiraveluLab/Cloud2Sim) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | An Adaptive and Distributed Architecture for Cloud and MapReduce Algorithms and Simulations. |  |  | 🚀 46 |
+| [**Cloud2Sim**](https://github.com/KathiraveluLab/Cloud2Sim) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | An Adaptive and Distributed Architecture for Cloud and MapReduce Algorithms and Simulations. |  |  | 🚀 50 |
 | [**conf-chat**](https://github.com/KathiraveluLab/conf-chat) | — | A P2P Chat |  | 🍴 20 | 🚀 1 |
 | [**CSCEA365-Group-Projects**](https://github.com/KathiraveluLab/CSCEA365-Group-Projects) | — |  |  | 🍴 9 | 🚀 3 |
 | [**Diomede**](https://github.com/KathiraveluLab/Diomede) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | DICOM Telemedicine Toolkit | ⭐ 16 | 🍴 32 | 🚀 339 |
@@ -50,11 +50,11 @@ We build open-source research frameworks in distributed systems, healthcare info
 | [**SENDIM**](https://github.com/KathiraveluLab/SENDIM) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | A Simulation, Emulation, aNd Deployment Integration Middleware for cloud networks. |  |  | 🚀 11 |
 | [**SFILS**](https://github.com/KathiraveluLab/SFILS) | — | An integrated library system for the San Francisco Public Library. |  | 🍴 25 | 🚀 10 |
 | [**Sintra**](https://github.com/KathiraveluLab/Sintra) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | Self-adaptive Interdomain Network Transport for Real-Time Applications | ⭐ 3 | 🍴 5 | 🚀 93 |
-| [**SMART**](https://github.com/KathiraveluLab/SMART) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | SDN Middlebox Architecture for Resilient Transfers |  |  | 🚀 21 |
+| [**SMART**](https://github.com/KathiraveluLab/SMART) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | SDN Middlebox Architecture for Resilient Transfers |  |  | 🚀 23 |
 | [**TENeT**](https://github.com/KathiraveluLab/TENeT) | — | Telehealth Effectiveness and Necessity Tracker | ⭐ 6 | 🍴 17 | 🚀 19 |
 | [**text-based-coding**](https://github.com/KathiraveluLab/text-based-coding) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | Text-based Coding in Python. A UAA Summer Engineering Academy session | ⭐ 1 |  | 🚀 10 |
-| [**Viseu**](https://github.com/KathiraveluLab/Viseu) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | Virtual Internet Services at the Edge | ⭐ 2 |  | 🚀 161 |
-| [**XPD**](https://github.com/KathiraveluLab/XPD) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | XPD, a Mark-Compact Collector algorithm implementation for MMTk and a micro-benchmark for the GC algorithms in Java, named XPDBench. |  |  | 🚀 14 |
+| [**Viseu**](https://github.com/KathiraveluLab/Viseu) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | Virtual Internet Services at the Edge | ⭐ 2 |  | 🚀 164 |
+| [**XPD**](https://github.com/KathiraveluLab/XPD) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | XPD, a Mark-Compact Collector algorithm implementation for MMTk and a micro-benchmark for the GC algorithms in Java, named XPDBench. |  |  | 🚀 16 |
 | [**xSDN**](https://github.com/KathiraveluLab/xSDN) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | An expressive simulator for dynamic network flows. |  |  | 🚀 45 |
 <!-- REPO-LIST:END -->
 
@@ -64,9 +64,9 @@ We build open-source research frameworks in distributed systems, healthcare info
 ```mermaid
 xychart-beta horizontal
     title "Language Distribution by Code Volume (KB)"
-    x-axis ["Java (43.7%)", "Python (22.3%)", "Jupyter Notebook (9.5%)", "TypeScript (7.6%)", "HTML (4.4%)", "Cairo (2.1%)", "Elixir (1.8%)", "Shell (1.7%)", "Erlang (1.5%)", "Mojo (1.3%)", "CSS (1.2%)", "Go (0.7%)", "Rust (0.6%)", "Gleam (0.3%)", "JavaScript (0.3%)", "PowerShell (0.2%)", "Batchfile (0.2%)", "Solidity (0.1%)", "Pony (0.1%)", "Move (0.1%)", "Roc (0.1%)", "C (0.1%)", "TeX (0.0%)", "Dockerfile (0.0%)", "Gnuplot (0.0%)", "Noir (0.0%)", "Clarity (0.0%)", "Makefile (0.0%)", "Leo (0.0%)"]
+    x-axis ["Java (43.7%)", "Python (22.3%)", "Jupyter Notebook (9.5%)", "TypeScript (7.6%)", "HTML (4.4%)", "Cairo (2.1%)", "Elixir (1.8%)", "Shell (1.8%)", "Erlang (1.5%)", "Mojo (1.3%)", "CSS (1.2%)", "Go (0.7%)", "Rust (0.6%)", "Gleam (0.3%)", "JavaScript (0.3%)", "PowerShell (0.2%)", "Batchfile (0.2%)", "Solidity (0.1%)", "Pony (0.1%)", "Move (0.1%)", "Roc (0.1%)", "C (0.1%)", "TeX (0.0%)", "Dockerfile (0.0%)", "Gnuplot (0.0%)", "Noir (0.0%)", "Clarity (0.0%)", "Makefile (0.0%)", "Leo (0.0%)"]
     y-axis "KB"
-    bar [2060.29, 1052.29, 446.9, 356.81, 206.55, 98.21, 85.96, 80.99, 71.37, 59.95, 58.73, 32.03, 26.08, 14.61, 13.89, 9.6, 7.42, 6.65, 4.14, 3.54, 3.37, 2.58, 2.29, 2.01, 1.82, 1.55, 1.53, 0.99, 0.27]
+    bar [2060.23, 1052.29, 446.9, 356.81, 206.55, 98.21, 85.96, 82.57, 71.37, 59.95, 58.73, 32.03, 26.08, 14.61, 13.89, 9.6, 7.42, 6.65, 4.14, 3.54, 3.37, 2.58, 2.29, 2.01, 1.82, 1.55, 1.53, 0.99, 0.27]
 ```
 <!-- LANG-CHART:END -->
 
@@ -83,7 +83,7 @@ xychart-beta horizontal
 <!-- CONTRIBUTORS:START -->
 <table style="border-collapse: collapse; border: none;">
   <tr>
-    <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/pradeeban"><img src="https://avatars.githubusercontent.com/u/225631?v=4" width="100px;" alt="pradeeban" style="border-radius: 50%;"/><br /><sub><b>pradeeban</b></sub></a><br /><sub>1972 contributions</sub></td>
+    <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/pradeeban"><img src="https://avatars.githubusercontent.com/u/225631?v=4" width="100px;" alt="pradeeban" style="border-radius: 50%;"/><br /><sub><b>pradeeban</b></sub></a><br /><sub>1980 contributions</sub></td>
     <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/iprasannamb"><img src="https://avatars.githubusercontent.com/u/187874908?v=4" width="100px;" alt="iprasannamb" style="border-radius: 50%;"/><br /><sub><b>iprasannamb</b></sub></a><br /><sub>201 contributions</sub></td>
     <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/mdxabu"><img src="https://avatars.githubusercontent.com/u/115330277?v=4" width="100px;" alt="mdxabu" style="border-radius: 50%;"/><br /><sub><b>mdxabu</b></sub></a><br /><sub>188 contributions</sub></td>
     <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/shivamyadavrgipt"><img src="https://avatars.githubusercontent.com/u/164716426?v=4" width="100px;" alt="shivamyadavrgipt" style="border-radius: 50%;"/><br /><sub><b>shivamyadavrgipt</b></sub></a><br /><sub>165 contributions</sub></td>
