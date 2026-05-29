@@ -1,17 +1,17 @@
-<svg width="1188" height="250" viewBox="0 0 1188 250" xmlns="http://www.w3.org/2000/svg">
+<svg width="1192" height="250" viewBox="0 0 1192 250" xmlns="http://www.w3.org/2000/svg">
 <style>text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 10px; fill: #767676; } .year-label { font-size: 14px; font-weight: bold; fill: #24292e; } .month-label { font-size: 9px; } .bar:hover { fill: #40c463; } .y-label { text-anchor: end; }</style>
-<rect width="1188" height="250" fill="#ffffff" />
+<rect width="1192" height="250" fill="#ffffff" />
 <text x="10" y="25" style="font-size: 16px; font-weight: bold; fill: #24292e;">Organization Activity History (Weekly Commits)</text>
 <text x="35" y="204" class="y-label">0</text>
-<line x1="40" y1="200" x2="1178" y2="200" stroke="#f0f0f0" />
+<line x1="40" y1="200" x2="1182" y2="200" stroke="#f0f0f0" />
 <text x="35" y="167" class="y-label">121</text>
-<line x1="40" y1="163" x2="1178" y2="163" stroke="#f0f0f0" />
+<line x1="40" y1="163" x2="1182" y2="163" stroke="#f0f0f0" />
 <text x="35" y="130" class="y-label">242</text>
-<line x1="40" y1="126" x2="1178" y2="126" stroke="#f0f0f0" />
+<line x1="40" y1="126" x2="1182" y2="126" stroke="#f0f0f0" />
 <text x="35" y="92" class="y-label">363</text>
-<line x1="40" y1="88" x2="1178" y2="88" stroke="#f0f0f0" />
+<line x1="40" y1="88" x2="1182" y2="88" stroke="#f0f0f0" />
 <text x="35" y="54" class="y-label">485</text>
-<line x1="40" y1="50" x2="1178" y2="50" stroke="#f0f0f0" />
+<line x1="40" y1="50" x2="1182" y2="50" stroke="#f0f0f0" />
 <line x1="40" y1="50" x2="40" y2="200" stroke="#e1e4e8" />
 <rect class="bar" x="40" y="198" width="3" height="2" fill="#ebedf0" rx="0.5" ry="0.5"><title>Week of 2021-01-01: 0 commits</title></rect>
 <text x="40" y="240" class="year-label">2021</text>
@@ -365,5 +365,6 @@
 <text x="1152" y="220" class="month-label" transform="rotate(45, 1152, 220)">May</text>
 <rect class="bar" x="1156" y="166" width="3" height="34" fill="#40c463" rx="0.5" ry="0.5"><title>Week of 2026-05-08: 110 commits</title></rect>
 <rect class="bar" x="1160" y="185" width="3" height="15" fill="#40c463" rx="0.5" ry="0.5"><title>Week of 2026-05-15: 50 commits</title></rect>
-<rect class="bar" x="1164" y="195" width="3" height="5" fill="#40c463" rx="0.5" ry="0.5"><title>Week of 2026-05-22: 19 commits</title></rect>
+<rect class="bar" x="1164" y="194" width="3" height="6" fill="#40c463" rx="0.5" ry="0.5"><title>Week of 2026-05-22: 20 commits</title></rect>
+<rect class="bar" x="1168" y="198" width="3" height="2" fill="#ebedf0" rx="0.5" ry="0.5"><title>Week of 2026-05-29: 0 commits</title></rect>
 </svg>
