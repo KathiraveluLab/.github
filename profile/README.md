@@ -7,11 +7,11 @@ We build open-source research frameworks in distributed systems, healthcare info
 ## 🔬 Projects
 
 <!-- REPO-LIST:START -->
-> Last updated: 2026-06-11 16:32 UTC · 46 active public repositories
+> Last updated: 2026-06-12 05:10 UTC · 46 active public repositories
 
 | Repository | Language | Description | Stars | Forks | Commits |
 | --- | :---: | --- | :---: | :---: | :---: |
-| [**.github**](https://github.com/KathiraveluLab/.github) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) |  | ⭐ 1 | 🍴 1 | 🚀 149 |
+| [**.github**](https://github.com/KathiraveluLab/.github) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) |  | ⭐ 1 | 🍴 1 | 🚀 150 |
 | [**Alaskan-Season-of-Code**](https://github.com/KathiraveluLab/Alaskan-Season-of-Code) | — | A repository to hold the project ideas and past and current participants of Alaskan Season of Code |  |  | 🚀 11 |
 | [**Ararat**](https://github.com/KathiraveluLab/Ararat) | ![Mojo](https://img.shields.io/badge/Mojo-FF6700?style=flat-square&logo=mojo&logoColor=white) | DHG Workflow Executor |  |  | 🚀 15 |
 | [**AWANTA**](https://github.com/KathiraveluLab/AWANTA) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | An SD-WAN framework for telehealth access | ⭐ 4 | 🍴 6 | 🚀 189 |
@@ -52,7 +52,7 @@ We build open-source research frameworks in distributed systems, healthcare info
 | [**Sintra**](https://github.com/KathiraveluLab/Sintra) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | Self-adaptive Interdomain Network Transport for Real-Time Applications | ⭐ 3 | 🍴 6 | 🚀 95 |
 | [**SMART**](https://github.com/KathiraveluLab/SMART) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | SDN Middlebox Architecture for Resilient Transfers |  |  | 🚀 33 |
 | [**SOFIA**](https://github.com/KathiraveluLab/SOFIA) | ![Erlang](https://img.shields.io/badge/Erlang-8A8A8A?style=flat-square&logo=erlang&logoColor=white) | Service-Oriented Federated Interoperability Architecture |  |  | 🚀 34 |
-| [**TENeT**](https://github.com/KathiraveluLab/TENeT) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | Telehealth Effectiveness and Necessity Tracker | ⭐ 6 | 🍴 18 | 🚀 97 |
+| [**TENeT**](https://github.com/KathiraveluLab/TENeT) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | Telehealth Effectiveness and Necessity Tracker | ⭐ 5 | 🍴 18 | 🚀 97 |
 | [**text-based-coding**](https://github.com/KathiraveluLab/text-based-coding) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | Text-based Coding in Python. A UAA Summer Engineering Academy session | ⭐ 1 |  | 🚀 10 |
 | [**Viseu**](https://github.com/KathiraveluLab/Viseu) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | Virtual Internet Services at the Edge | ⭐ 2 |  | 🚀 170 |
 | [**XPD**](https://github.com/KathiraveluLab/XPD) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | XPD, a Mark-Compact Collector algorithm implementation for MMTk and a micro-benchmark for the GC algorithms in Java, named XPDBench. |  |  | 🚀 20 |
@@ -75,7 +75,7 @@ xychart-beta horizontal
 
 <!-- ACTIVITY-CHART:START -->
 <div align="center">
-  <img src="activity_graph.svg" alt="Organization Activity History" width="1196" style="max-width: none;" />
+  <img src="activity_graph.svg" alt="Organization Activity History" width="1200" style="max-width: none;" />
 </div>
 <!-- ACTIVITY-CHART:END -->
 
