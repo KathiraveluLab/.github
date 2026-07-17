@@ -7,11 +7,11 @@ We build open-source research frameworks in distributed systems, healthcare info
 ## 🔬 Projects
 
 <!-- REPO-LIST:START -->
-> Last updated: 2026-07-16 14:27 UTC · 47 active public repositories
+> Last updated: 2026-07-17 03:42 UTC · 47 active public repositories
 
 | Repository | Language | Description | Stars | Forks | Commits |
 | --- | :---: | --- | :---: | :---: | :---: |
-| [**.github**](https://github.com/KathiraveluLab/.github) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) |  | ⭐ 1 | 🍴 1 | 🚀 219 |
+| [**.github**](https://github.com/KathiraveluLab/.github) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) |  | ⭐ 1 | 🍴 1 | 🚀 220 |
 | [**Alaskan-Season-of-Code**](https://github.com/KathiraveluLab/Alaskan-Season-of-Code) | — | A repository to hold the project ideas and past and current participants of Alaskan Season of Code |  |  | 🚀 11 |
 | [**Ararat**](https://github.com/KathiraveluLab/Ararat) | ![Mojo](https://img.shields.io/badge/Mojo-FF6700?style=flat-square&logo=mojo&logoColor=white) | DHG Workflow Executor |  | 🍴 1 | 🚀 29 |
 | [**AWANTA**](https://github.com/KathiraveluLab/AWANTA) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | An SD-WAN framework for telehealth access | ⭐ 4 | 🍴 6 | 🚀 207 |
@@ -52,7 +52,7 @@ We build open-source research frameworks in distributed systems, healthcare info
 | [**SFILS**](https://github.com/KathiraveluLab/SFILS) | — | An integrated library system for the San Francisco Public Library. |  | 🍴 25 | 🚀 10 |
 | [**Sintra**](https://github.com/KathiraveluLab/Sintra) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | Self-adaptive Interdomain Network Transport for Real-Time Applications | ⭐ 3 | 🍴 6 | 🚀 101 |
 | [**SMART**](https://github.com/KathiraveluLab/SMART) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | SDN Middlebox Architecture for Resilient Transfers |  |  | 🚀 33 |
-| [**SOFIA**](https://github.com/KathiraveluLab/SOFIA) | ![Erlang](https://img.shields.io/badge/Erlang-8A8A8A?style=flat-square&logo=erlang&logoColor=white) | Service-Oriented Federated Interoperability Architecture |  |  | 🚀 34 |
+| [**SOFIA**](https://github.com/KathiraveluLab/SOFIA) | ![Erlang](https://img.shields.io/badge/Erlang-8A8A8A?style=flat-square&logo=erlang&logoColor=white) | Service-Oriented Federated Interoperability Architecture |  |  | 🚀 36 |
 | [**TENeT**](https://github.com/KathiraveluLab/TENeT) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | Telehealth Effectiveness and Necessity Tracker | ⭐ 6 | 🍴 19 | 🚀 97 |
 | [**text-based-coding**](https://github.com/KathiraveluLab/text-based-coding) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | Text-based Coding in Python. A UAA Summer Engineering Academy session | ⭐ 1 |  | 🚀 10 |
 | [**Viseu**](https://github.com/KathiraveluLab/Viseu) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | Virtual Internet Services at the Edge | ⭐ 2 |  | 🚀 180 |
@@ -66,9 +66,9 @@ We build open-source research frameworks in distributed systems, healthcare info
 ```mermaid
 xychart-beta horizontal
     title "Language Distribution by Code Volume (KB)"
-    x-axis ["Java (32.7%)", "Python (27.4%)", "TypeScript (8.0%)", "Jupyter Notebook (7.0%)", "MATLAB (5.4%)", "Erlang (3.6%)", "HTML (3.4%)", "Elixir (2.8%)", "Cairo (2.3%)", "Shell (1.8%)", "JavaScript (1.5%)", "Mojo (1.3%)", "CSS (1.1%)", "Go (0.5%)", "Rust (0.4%)", "Gleam (0.2%)", "Move (0.1%)", "Solidity (0.1%)", "Batchfile (0.1%)", "Dockerfile (0.1%)", "Roc (0.1%)", "Pony (0.1%)", "C (0.0%)", "Noir (0.0%)", "Gnuplot (0.0%)", "Clarity (0.0%)", "Makefile (0.0%)", "PowerShell (0.0%)", "Leo (0.0%)"]
+    x-axis ["Java (32.6%)", "Python (27.3%)", "TypeScript (7.9%)", "Jupyter Notebook (7.0%)", "MATLAB (5.4%)", "Erlang (3.9%)", "HTML (3.4%)", "Elixir (2.7%)", "Cairo (2.3%)", "Shell (1.8%)", "JavaScript (1.5%)", "Mojo (1.3%)", "CSS (1.1%)", "Go (0.5%)", "Rust (0.4%)", "Gleam (0.2%)", "Move (0.1%)", "Solidity (0.1%)", "Batchfile (0.1%)", "Dockerfile (0.1%)", "Roc (0.1%)", "Pony (0.1%)", "C (0.0%)", "Noir (0.0%)", "Gnuplot (0.0%)", "Clarity (0.0%)", "Makefile (0.0%)", "PowerShell (0.0%)", "Leo (0.0%)"]
     y-axis "KB"
-    bar [2095.91, 1753.68, 510.29, 446.91, 343.93, 232.36, 215.34, 176.6, 149.42, 114.03, 96.07, 80.48, 71.2, 32.03, 28.25, 15.66, 8.83, 6.65, 6.48, 4.63, 4.5, 4.41, 2.58, 2.46, 1.82, 1.53, 1.02, 1.02, 0.26]
+    bar [2095.91, 1753.68, 510.29, 446.91, 343.93, 248.01, 215.34, 176.6, 149.42, 114.03, 96.07, 80.48, 71.2, 32.03, 28.25, 15.66, 8.83, 6.65, 6.48, 4.63, 4.5, 4.41, 2.58, 2.46, 1.82, 1.53, 1.02, 1.02, 0.26]
 ```
 <!-- LANG-CHART:END -->
 
@@ -76,7 +76,7 @@ xychart-beta horizontal
 
 <!-- ACTIVITY-CHART:START -->
 <div align="center">
-  <img src="activity_graph.svg" alt="Organization Activity History" width="1216" style="max-width: none;" />
+  <img src="activity_graph.svg" alt="Organization Activity History" width="1220" style="max-width: none;" />
 </div>
 <!-- ACTIVITY-CHART:END -->
 
@@ -85,7 +85,7 @@ xychart-beta horizontal
 <!-- CONTRIBUTORS:START -->
 <table style="border-collapse: collapse; border: none;">
   <tr>
-    <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/pradeeban"><img src="https://avatars.githubusercontent.com/u/225631?v=4" width="100px;" alt="pradeeban" style="border-radius: 50%;"/><br /><sub><b>pradeeban</b></sub></a><br /><sub>2551 contributions</sub></td>
+    <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/pradeeban"><img src="https://avatars.githubusercontent.com/u/225631?v=4" width="100px;" alt="pradeeban" style="border-radius: 50%;"/><br /><sub><b>pradeeban</b></sub></a><br /><sub>2553 contributions</sub></td>
     <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/iprasannamb"><img src="https://avatars.githubusercontent.com/u/187874908?v=4" width="100px;" alt="iprasannamb" style="border-radius: 50%;"/><br /><sub><b>iprasannamb</b></sub></a><br /><sub>224 contributions</sub></td>
     <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/mdxabu"><img src="https://avatars.githubusercontent.com/u/115330277?v=4" width="100px;" alt="mdxabu" style="border-radius: 50%;"/><br /><sub><b>mdxabu</b></sub></a><br /><sub>188 contributions</sub></td>
     <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/shivamyadavrgipt"><img src="https://avatars.githubusercontent.com/u/164716426?v=4" width="100px;" alt="shivamyadavrgipt" style="border-radius: 50%;"/><br /><sub><b>shivamyadavrgipt</b></sub></a><br /><sub>168 contributions</sub></td>
