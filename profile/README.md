@@ -7,11 +7,11 @@ We build open-source research frameworks in distributed systems, healthcare info
 ## 🔬 Projects
 
 <!-- REPO-LIST:START -->
-> Last updated: 2026-08-08 13:16 UTC · 48 active public repositories
+> Last updated: 2026-08-09 02:32 UTC · 48 active public repositories
 
 | Repository | Language | Description | Stars | Forks | Commits |
 | --- | :---: | --- | :---: | :---: | :---: |
-| [**.github**](https://github.com/KathiraveluLab/.github) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) |  | ⭐ 1 | 🍴 1 | 🚀 265 |
+| [**.github**](https://github.com/KathiraveluLab/.github) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) |  | ⭐ 1 | 🍴 1 | 🚀 266 |
 | [**Alaskan-Season-of-Code**](https://github.com/KathiraveluLab/Alaskan-Season-of-Code) | — | A repository to hold the project ideas and past and current participants of Alaskan Season of Code |  |  | 🚀 11 |
 | [**Ararat**](https://github.com/KathiraveluLab/Ararat) | ![Mojo](https://img.shields.io/badge/Mojo-FF6700?style=flat-square&logo=mojo&logoColor=white) | DHG Workflow Executor |  | 🍴 1 | 🚀 29 |
 | [**AWANTA**](https://github.com/KathiraveluLab/AWANTA) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | An SD-WAN framework for telehealth access | ⭐ 4 | 🍴 6 | 🚀 207 |
@@ -100,18 +100,18 @@ xychart-beta horizontal
     <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/Sahil-u07"><img src="https://avatars.githubusercontent.com/u/76817449?v=4" width="100px;" alt="Sahil-u07" style="border-radius: 50%;"/><br /><sub><b>Sahil-u07</b></sub></a><br /><sub>67 contributions</sub></td>
   </tr>
   <tr>
-    <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/ishaanxgupta"><img src="https://avatars.githubusercontent.com/u/124028055?v=4" width="100px;" alt="ishaanxgupta" style="border-radius: 50%;"/><br /><sub><b>ishaanxgupta</b></sub></a><br /><sub>66 contributions</sub></td>
     <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/anish1206"><img src="https://avatars.githubusercontent.com/u/208164559?v=4" width="100px;" alt="anish1206" style="border-radius: 50%;"/><br /><sub><b>anish1206</b></sub></a><br /><sub>60 contributions</sub></td>
     <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/ASHISH-JHA94"><img src="https://avatars.githubusercontent.com/u/136432304?v=4" width="100px;" alt="ASHISH-JHA94" style="border-radius: 50%;"/><br /><sub><b>ASHISH-JHA94</b></sub></a><br /><sub>60 contributions</sub></td>
     <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/jess-tech-lab"><img src="https://avatars.githubusercontent.com/u/221731682?v=4" width="100px;" alt="jess-tech-lab" style="border-radius: 50%;"/><br /><sub><b>jess-tech-lab</b></sub></a><br /><sub>56 contributions</sub></td>
     <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/dakshhhhh16"><img src="https://avatars.githubusercontent.com/u/213169480?v=4" width="100px;" alt="dakshhhhh16" style="border-radius: 50%;"/><br /><sub><b>dakshhhhh16</b></sub></a><br /><sub>50 contributions</sub></td>
+    <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/AnvayKharb"><img src="https://avatars.githubusercontent.com/u/185811796?v=4" width="100px;" alt="AnvayKharb" style="border-radius: 50%;"/><br /><sub><b>AnvayKharb</b></sub></a><br /><sub>47 contributions</sub></td>
   </tr>
   <tr>
-    <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/AnvayKharb"><img src="https://avatars.githubusercontent.com/u/185811796?v=4" width="100px;" alt="AnvayKharb" style="border-radius: 50%;"/><br /><sub><b>AnvayKharb</b></sub></a><br /><sub>47 contributions</sub></td>
     <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/kartikeyg0104"><img src="https://avatars.githubusercontent.com/u/180191571?v=4" width="100px;" alt="kartikeyg0104" style="border-radius: 50%;"/><br /><sub><b>kartikeyg0104</b></sub></a><br /><sub>45 contributions</sub></td>
     <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/AbrhamYishak"><img src="https://avatars.githubusercontent.com/u/136889996?v=4" width="100px;" alt="AbrhamYishak" style="border-radius: 50%;"/><br /><sub><b>AbrhamYishak</b></sub></a><br /><sub>36 contributions</sub></td>
     <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/kallal79"><img src="https://avatars.githubusercontent.com/u/182690849?v=4" width="100px;" alt="kallal79" style="border-radius: 50%;"/><br /><sub><b>kallal79</b></sub></a><br /><sub>36 contributions</sub></td>
     <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/sofeel"><img src="https://avatars.githubusercontent.com/u/12257883?v=4" width="100px;" alt="sofeel" style="border-radius: 50%;"/><br /><sub><b>sofeel</b></sub></a><br /><sub>32 contributions</sub></td>
+    <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/aasthathakkar"><img src="https://avatars.githubusercontent.com/u/202259423?v=4" width="100px;" alt="aasthathakkar" style="border-radius: 50%;"/><br /><sub><b>aasthathakkar</b></sub></a><br /><sub>29 contributions</sub></td>
   </tr>
 </table>
 <!-- CONTRIBUTORS:END -->
