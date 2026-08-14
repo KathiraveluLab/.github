@@ -380,5 +380,5 @@
 <rect class="bar" x="1204" y="194" width="3" height="6" fill="#40c463" rx="0.5" ry="0.5"><title>Week of 2026-07-31: 23 commits</title></rect>
 <rect class="bar" x="1208" y="191" width="3" height="9" fill="#40c463" rx="0.5" ry="0.5"><title>Week of 2026-08-07: 31 commits</title></rect>
 <text x="1208" y="220" class="month-label" transform="rotate(45, 1208, 220)">Aug</text>
-<rect class="bar" x="1212" y="198" width="3" height="2" fill="#ebedf0" rx="0.5" ry="0.5"><title>Week of 2026-08-14: 0 commits</title></rect>
+<rect class="bar" x="1212" y="198" width="3" height="2" fill="#40c463" rx="0.5" ry="0.5"><title>Week of 2026-08-14: 1 commits</title></rect>
 </svg>
