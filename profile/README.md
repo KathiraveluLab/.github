@@ -7,11 +7,11 @@ We build open-source research frameworks in distributed systems, healthcare info
 ## 🔬 Projects
 
 <!-- REPO-LIST:START -->
-> Last updated: 2026-08-15 13:02 UTC · 48 active public repositories
+> Last updated: 2026-08-16 02:00 UTC · 48 active public repositories
 
 | Repository | Language | Description | Stars | Forks | Commits |
 | --- | :---: | --- | :---: | :---: | :---: |
-| [**.github**](https://github.com/KathiraveluLab/.github) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) |  | ⭐ 1 | 🍴 1 | 🚀 279 |
+| [**.github**](https://github.com/KathiraveluLab/.github) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) |  | ⭐ 1 | 🍴 1 | 🚀 280 |
 | [**Alaskan-Season-of-Code**](https://github.com/KathiraveluLab/Alaskan-Season-of-Code) | — | A repository to hold the project ideas and past and current participants of Alaskan Season of Code |  |  | 🚀 11 |
 | [**Ararat**](https://github.com/KathiraveluLab/Ararat) | ![Mojo](https://img.shields.io/badge/Mojo-FF6700?style=flat-square&logo=mojo&logoColor=white) | DHG Workflow Executor |  | 🍴 1 | 🚀 33 |
 | [**AWANTA**](https://github.com/KathiraveluLab/AWANTA) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | An SD-WAN framework for telehealth access | ⭐ 4 | 🍴 6 | 🚀 207 |
@@ -50,7 +50,7 @@ We build open-source research frameworks in distributed systems, healthcare info
 | [**SDDS**](https://github.com/KathiraveluLab/SDDS) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | Software-Defined Data Services |  |  | 🚀 18 |
 | [**SENDIM**](https://github.com/KathiraveluLab/SENDIM) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | A Simulation, Emulation, aNd Deployment Integration Middleware for cloud networks. |  |  | 🚀 12 |
 | [**SFILS**](https://github.com/KathiraveluLab/SFILS) | — | An integrated library system for the San Francisco Public Library. |  | 🍴 25 | 🚀 10 |
-| [**Sintra**](https://github.com/KathiraveluLab/Sintra) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | Self-adaptive Interdomain Network Transport for Real-Time Applications | ⭐ 3 | 🍴 6 | 🚀 101 |
+| [**Sintra**](https://github.com/KathiraveluLab/Sintra) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | Self-adaptive Interdomain Network Transport for Real-Time Applications | ⭐ 3 | 🍴 6 | 🚀 104 |
 | [**SMART**](https://github.com/KathiraveluLab/SMART) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | SDN Middlebox Architecture for Resilient Transfers |  |  | 🚀 33 |
 | [**SOFIA**](https://github.com/KathiraveluLab/SOFIA) | ![Erlang](https://img.shields.io/badge/Erlang-8A8A8A?style=flat-square&logo=erlang&logoColor=white) | Service-Oriented Federated Interoperability Architecture |  |  | 🚀 55 |
 | [**TENeT**](https://github.com/KathiraveluLab/TENeT) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | Telehealth Effectiveness and Necessity Tracker | ⭐ 6 | 🍴 20 | 🚀 97 |
@@ -86,7 +86,7 @@ xychart-beta horizontal
 <!-- CONTRIBUTORS:START -->
 <table style="border-collapse: collapse; border: none;">
   <tr>
-    <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/pradeeban"><img src="https://avatars.githubusercontent.com/u/225631?v=4" width="100px;" alt="pradeeban" style="border-radius: 50%;"/><br /><sub><b>pradeeban</b></sub></a><br /><sub>2594 contributions</sub></td>
+    <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/pradeeban"><img src="https://avatars.githubusercontent.com/u/225631?v=4" width="100px;" alt="pradeeban" style="border-radius: 50%;"/><br /><sub><b>pradeeban</b></sub></a><br /><sub>2596 contributions</sub></td>
     <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/iprasannamb"><img src="https://avatars.githubusercontent.com/u/187874908?v=4" width="100px;" alt="iprasannamb" style="border-radius: 50%;"/><br /><sub><b>iprasannamb</b></sub></a><br /><sub>224 contributions</sub></td>
     <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/mdxabu"><img src="https://avatars.githubusercontent.com/u/115330277?v=4" width="100px;" alt="mdxabu" style="border-radius: 50%;"/><br /><sub><b>mdxabu</b></sub></a><br /><sub>188 contributions</sub></td>
     <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/shivamyadavrgipt"><img src="https://avatars.githubusercontent.com/u/164716426?v=4" width="100px;" alt="shivamyadavrgipt" style="border-radius: 50%;"/><br /><sub><b>shivamyadavrgipt</b></sub></a><br /><sub>168 contributions</sub></td>
