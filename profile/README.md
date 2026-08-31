@@ -7,11 +7,11 @@ We build open-source research frameworks in distributed systems, healthcare info
 ## 🔬 Projects
 
 <!-- REPO-LIST:START -->
-> Last updated: 2026-08-30 16:47 UTC · 49 active public repositories
+> Last updated: 2026-08-31 05:46 UTC · 49 active public repositories
 
 | Repository | Language | Description | Stars | Forks | Commits |
 | --- | :---: | --- | :---: | :---: | :---: |
-| [**.github**](https://github.com/KathiraveluLab/.github) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) |  | ⭐ 1 | 🍴 1 | 🚀 309 |
+| [**.github**](https://github.com/KathiraveluLab/.github) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) |  | ⭐ 1 | 🍴 1 | 🚀 310 |
 | [**Alaskan-Season-of-Code**](https://github.com/KathiraveluLab/Alaskan-Season-of-Code) | — | A repository to hold the project ideas and past and current participants of Alaskan Season of Code |  |  | 🚀 12 |
 | [**Ararat**](https://github.com/KathiraveluLab/Ararat) | ![Mojo](https://img.shields.io/badge/Mojo-FF6700?style=flat-square&logo=mojo&logoColor=white) | DHG Workflow Executor |  | 🍴 1 | 🚀 33 |
 | [**AWANTA**](https://github.com/KathiraveluLab/AWANTA) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | An SD-WAN framework for telehealth access | ⭐ 4 | 🍴 6 | 🚀 207 |
@@ -50,11 +50,11 @@ We build open-source research frameworks in distributed systems, healthcare info
 | [**SD-CPS**](https://github.com/KathiraveluLab/SD-CPS) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | Software-Defined Cyber-Physical Systems |  |  | 🚀 43 |
 | [**SDDS**](https://github.com/KathiraveluLab/SDDS) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | Software-Defined Data Services |  |  | 🚀 18 |
 | [**SENDIM**](https://github.com/KathiraveluLab/SENDIM) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | A Simulation, Emulation, aNd Deployment Integration Middleware for cloud networks. |  |  | 🚀 12 |
-| [**SFILS**](https://github.com/KathiraveluLab/SFILS) | — | An integrated library system for the San Francisco Public Library. |  | 🍴 28 | 🚀 10 |
+| [**SFILS**](https://github.com/KathiraveluLab/SFILS) | — | An integrated library system for the San Francisco Public Library. |  | 🍴 29 | 🚀 10 |
 | [**Sintra**](https://github.com/KathiraveluLab/Sintra) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | Self-adaptive Interdomain Network Transport for Real-Time Applications | ⭐ 3 | 🍴 6 | 🚀 104 |
 | [**SMART**](https://github.com/KathiraveluLab/SMART) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | SDN Middlebox Architecture for Resilient Transfers |  |  | 🚀 33 |
 | [**SOFIA**](https://github.com/KathiraveluLab/SOFIA) | ![Erlang](https://img.shields.io/badge/Erlang-8A8A8A?style=flat-square&logo=erlang&logoColor=white) | Service-Oriented Federated Interoperability Architecture |  |  | 🚀 55 |
-| [**TENeT**](https://github.com/KathiraveluLab/TENeT) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | Telehealth Effectiveness and Necessity Tracker | ⭐ 6 | 🍴 20 | 🚀 97 |
+| [**TENeT**](https://github.com/KathiraveluLab/TENeT) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | Telehealth Effectiveness and Necessity Tracker | ⭐ 6 | 🍴 21 | 🚀 97 |
 | [**text-based-coding**](https://github.com/KathiraveluLab/text-based-coding) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | Text-based Coding in Python. A UAA Summer Engineering Academy session | ⭐ 1 |  | 🚀 16 |
 | [**TRACE**](https://github.com/KathiraveluLab/TRACE) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | Tracking Repository Alignment and Context Evaluation. |  |  | 🚀 4 |
 | [**Viseu**](https://github.com/KathiraveluLab/Viseu) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | Virtual Internet Services at the Edge | ⭐ 2 |  | 🚀 180 |
