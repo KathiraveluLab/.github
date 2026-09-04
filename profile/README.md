@@ -7,11 +7,11 @@ We build open-source research frameworks in distributed systems, healthcare info
 ## 🔬 Projects
 
 <!-- REPO-LIST:START -->
-> Last updated: 2026-09-03 16:32 UTC · 49 active public repositories
+> Last updated: 2026-09-04 04:43 UTC · 49 active public repositories
 
 | Repository | Language | Description | Stars | Forks | Commits |
 | --- | :---: | --- | :---: | :---: | :---: |
-| [**.github**](https://github.com/KathiraveluLab/.github) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) |  | ⭐ 1 | 🍴 1 | 🚀 317 |
+| [**.github**](https://github.com/KathiraveluLab/.github) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) |  | ⭐ 1 | 🍴 1 | 🚀 318 |
 | [**Alaskan-Season-of-Code**](https://github.com/KathiraveluLab/Alaskan-Season-of-Code) | — | A repository to hold the project ideas and past and current participants of Alaskan Season of Code |  |  | 🚀 12 |
 | [**Ararat**](https://github.com/KathiraveluLab/Ararat) | ![Mojo](https://img.shields.io/badge/Mojo-FF6700?style=flat-square&logo=mojo&logoColor=white) | DHG Workflow Executor |  | 🍴 1 | 🚀 33 |
 | [**AWANTA**](https://github.com/KathiraveluLab/AWANTA) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | An SD-WAN framework for telehealth access | ⭐ 4 | 🍴 6 | 🚀 207 |
@@ -25,7 +25,7 @@ We build open-source research frameworks in distributed systems, healthcare info
 | [**CSCEA365-Group-Projects**](https://github.com/KathiraveluLab/CSCEA365-Group-Projects) | — |  |  | 🍴 9 | 🚀 3 |
 | [**Diomede**](https://github.com/KathiraveluLab/Diomede) | ![HTML](https://img.shields.io/badge/HTML-E34C26?style=flat-square&logo=html&logoColor=white) | DICOM Telemedicine Toolkit | ⭐ 17 | 🍴 30 | 🚀 431 |
 | [**Distributed-Computing**](https://github.com/KathiraveluLab/Distributed-Computing) | ![Erlang](https://img.shields.io/badge/Erlang-8A8A8A?style=flat-square&logo=erlang&logoColor=white) | Class resources for the Distributed Computing course |  |  | 🚀 11 |
-| [**Dragonfly**](https://github.com/KathiraveluLab/Dragonfly) | — | Distributed Computing Sample Project |  | 🍴 22 | 🚀 3 |
+| [**Dragonfly**](https://github.com/KathiraveluLab/Dragonfly) | — | Distributed Computing Sample Project |  | 🍴 23 | 🚀 3 |
 | [**DREAMS**](https://github.com/KathiraveluLab/DREAMS) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | Digitization for Recovery: Exploring Arts with Mining for Societal well-being. | ⭐ 7 | 🍴 27 | 🚀 620 |
 | [**dudu**](https://github.com/KathiraveluLab/dudu) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | Distributed Near Duplicate Detection for Big Data |  |  | 🚀 40 |
 | [**DWiM**](https://github.com/KathiraveluLab/DWiM) | ![MATLAB](https://img.shields.io/badge/MATLAB-8A8A8A?style=flat-square&logo=matlab&logoColor=white) | DICOM Workflows in MATLAB | ⭐ 1 | 🍴 4 | 🚀 234 |
@@ -78,7 +78,7 @@ xychart-beta horizontal
 
 <!-- ACTIVITY-CHART:START -->
 <div align="center">
-  <img src="activity_graph.svg" alt="Organization Activity History" width="1244" style="max-width: none;" />
+  <img src="activity_graph.svg" alt="Organization Activity History" width="1248" style="max-width: none;" />
 </div>
 <!-- ACTIVITY-CHART:END -->
 
