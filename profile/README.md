@@ -7,11 +7,11 @@ We build open-source research frameworks in distributed systems, healthcare info
 ## 🔬 Projects
 
 <!-- REPO-LIST:START -->
-> Last updated: 2026-09-11 16:35 UTC · 49 active public repositories
+> Last updated: 2026-09-12 04:43 UTC · 49 active public repositories
 
 | Repository | Language | Description | Stars | Forks | Commits |
 | --- | :---: | --- | :---: | :---: | :---: |
-| [**.github**](https://github.com/KathiraveluLab/.github) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) |  | ⭐ 1 | 🍴 1 | 🚀 333 |
+| [**.github**](https://github.com/KathiraveluLab/.github) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) |  | ⭐ 1 | 🍴 1 | 🚀 334 |
 | [**Alaskan-Season-of-Code**](https://github.com/KathiraveluLab/Alaskan-Season-of-Code) | — | A repository to hold the project ideas and past and current participants of Alaskan Season of Code |  |  | 🚀 12 |
 | [**Ararat**](https://github.com/KathiraveluLab/Ararat) | ![Mojo](https://img.shields.io/badge/Mojo-FF6700?style=flat-square&logo=mojo&logoColor=white) | DHG Workflow Executor |  | 🍴 1 | 🚀 33 |
 | [**AWANTA**](https://github.com/KathiraveluLab/AWANTA) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | An SD-WAN framework for telehealth access | ⭐ 4 | 🍴 6 | 🚀 207 |
@@ -35,7 +35,7 @@ We build open-source research frameworks in distributed systems, healthcare info
 | [**FIRM**](https://github.com/KathiraveluLab/FIRM) | ![Mojo](https://img.shields.io/badge/Mojo-FF6700?style=flat-square&logo=mojo&logoColor=white) | Find, Invoke, Return, and Manage |  |  | 🚀 17 |
 | [**GUARDA**](https://github.com/KathiraveluLab/GUARDA) | ![Elixir](https://img.shields.io/badge/Elixir-6E4A7E?style=flat-square&logo=elixir&logoColor=white) | Gateway for Uniform Access to Remote Data and Analytics |  | 🍴 1 | 🚀 19 |
 | [**IGUANA**](https://github.com/KathiraveluLab/IGUANA) | ![Erlang](https://img.shields.io/badge/Erlang-8A8A8A?style=flat-square&logo=erlang&logoColor=white) | Integrated Guardrails for Unbiased and Adaptive Neural Network Architectures |  |  | 🚀 131 |
-| [**Iguana-Chess**](https://github.com/KathiraveluLab/Iguana-Chess) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | Iguana Chess |  |  | 🚀 4 |
+| [**Iguana-Chess**](https://github.com/KathiraveluLab/Iguana-Chess) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | Iguana Chess |  | 🍴 1 | 🚀 4 |
 | [**IMPACT**](https://github.com/KathiraveluLab/IMPACT) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | Intent-based Multi-agent Platform for Architectural Change Tracking. |  |  | 🚀 78 |
 | [**L4SBOA**](https://github.com/KathiraveluLab/L4SBOA) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | L4S Bandwidth Orchestration Architecture | ⭐ 5 | 🍴 6 | 🚀 221 |
 | [**LAGOS**](https://github.com/KathiraveluLab/LAGOS) | ![Gleam](https://img.shields.io/badge/Gleam-8A8A8A?style=flat-square&logo=gleam&logoColor=white) | Latency-aware Accountable Governance for Overlay Scaling |  |  | 🚀 38 |
