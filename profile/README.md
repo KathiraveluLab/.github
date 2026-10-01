@@ -7,14 +7,14 @@ We build open-source research frameworks in distributed systems, healthcare info
 ## 🔬 Projects
 
 <!-- REPO-LIST:START -->
-> Last updated: 2026-10-01 06:08 UTC · 49 active public repositories
+> Last updated: 2026-10-01 18:28 UTC · 49 active public repositories
 
 | Repository | Language | Description | Stars | Forks | Commits |
 | --- | :---: | --- | :---: | :---: | :---: |
-| [**.github**](https://github.com/KathiraveluLab/.github) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) |  | ⭐ 1 | 🍴 1 | 🚀 372 |
+| [**.github**](https://github.com/KathiraveluLab/.github) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) |  | ⭐ 1 | 🍴 1 | 🚀 373 |
 | [**Alaskan-Season-of-Code**](https://github.com/KathiraveluLab/Alaskan-Season-of-Code) | — | A repository to hold the project ideas and past and current participants of Alaskan Season of Code |  |  | 🚀 12 |
 | [**Ararat**](https://github.com/KathiraveluLab/Ararat) | ![Mojo](https://img.shields.io/badge/Mojo-FF6700?style=flat-square&logo=mojo&logoColor=white) | DHG Workflow Executor |  | 🍴 1 | 🚀 33 |
-| [**AWANTA**](https://github.com/KathiraveluLab/AWANTA) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | An SD-WAN framework for telehealth access | ⭐ 4 | 🍴 6 | 🚀 277 |
+| [**AWANTA**](https://github.com/KathiraveluLab/AWANTA) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | An SD-WAN framework for telehealth access | ⭐ 4 | 🍴 6 | 🚀 280 |
 | [**Beehive**](https://github.com/KathiraveluLab/Beehive) | ![TypeScript](https://img.shields.io/badge/TypeScript-2B7489?style=flat-square&logo=typescript&logoColor=white) | A Data Federation Approach to Analyze Behavioral Health and Supplement Healthcare Practice with Community Health Metrics in Alaska | ⭐ 27 | 🍴 70 | 🚀 1396 |
 | [**BHV**](https://github.com/KathiraveluLab/BHV) | — | Behavioral Health Vault | ⭐ 16 | 🍴 41 | 🚀 16 |
 | [**CAN**](https://github.com/KathiraveluLab/CAN) | ![Rust](https://img.shields.io/badge/Rust-DEA584?style=flat-square&logo=rust&logoColor=white) | Content-Aware-Networking |  |  | 🚀 9 |
@@ -26,7 +26,7 @@ We build open-source research frameworks in distributed systems, healthcare info
 | [**Diomede**](https://github.com/KathiraveluLab/Diomede) | ![HTML](https://img.shields.io/badge/HTML-E34C26?style=flat-square&logo=html&logoColor=white) | DICOM Telemedicine Toolkit | ⭐ 18 | 🍴 30 | 🚀 431 |
 | [**Distributed-Computing**](https://github.com/KathiraveluLab/Distributed-Computing) | ![Erlang](https://img.shields.io/badge/Erlang-8A8A8A?style=flat-square&logo=erlang&logoColor=white) | Class resources for the Distributed Computing course |  |  | 🚀 11 |
 | [**Dragonfly**](https://github.com/KathiraveluLab/Dragonfly) | — | Distributed Computing Sample Project |  | 🍴 23 | 🚀 3 |
-| [**DREAMS**](https://github.com/KathiraveluLab/DREAMS) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | Digitization for Recovery: Exploring Arts with Mining for Societal well-being. | ⭐ 7 | 🍴 28 | 🚀 621 |
+| [**DREAMS**](https://github.com/KathiraveluLab/DREAMS) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | Digitization for Recovery: Exploring Arts with Mining for Societal well-being. | ⭐ 7 | 🍴 29 | 🚀 621 |
 | [**dudu**](https://github.com/KathiraveluLab/dudu) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | Distributed Near Duplicate Detection for Big Data |  |  | 🚀 40 |
 | [**DWiM**](https://github.com/KathiraveluLab/DWiM) | ![MATLAB](https://img.shields.io/badge/MATLAB-8A8A8A?style=flat-square&logo=matlab&logoColor=white) | DICOM Workflows in MATLAB | ⭐ 1 | 🍴 4 | 🚀 234 |
 | [**Epicue**](https://github.com/KathiraveluLab/Epicue) | ![Cairo](https://img.shields.io/badge/Cairo-8A8A8A?style=flat-square&logo=cairo&logoColor=white) | Equity, Privacy, and Integrity with Cairo in Untrusted Environments |  |  | 🚀 99 |
@@ -68,9 +68,9 @@ We build open-source research frameworks in distributed systems, healthcare info
 ```mermaid
 xychart-beta horizontal
     title "Language Distribution by Code Volume (KB)"
-    x-axis ["Java (27.6%)", "Python (25.4%)", "HTML (15.3%)", "TypeScript (6.7%)", "Jupyter Notebook (5.9%)", "MATLAB (4.5%)", "Erlang (3.7%)", "Elixir (2.3%)", "Cairo (2.0%)", "Shell (1.6%)", "JavaScript (1.3%)", "Mojo (1.2%)", "CSS (0.9%)", "Go (0.4%)", "Rust (0.4%)", "Gleam (0.2%)", "Move (0.1%)", "Solidity (0.1%)", "Batchfile (0.1%)", "Dockerfile (0.1%)", "Roc (0.1%)", "Pony (0.1%)", "C (0.0%)", "Noir (0.0%)", "Gnuplot (0.0%)", "Makefile (0.0%)", "Clarity (0.0%)", "PowerShell (0.0%)", "Leo (0.0%)"]
+    x-axis ["Java (27.5%)", "Python (25.5%)", "HTML (15.3%)", "TypeScript (6.7%)", "Jupyter Notebook (5.9%)", "MATLAB (4.5%)", "Erlang (3.7%)", "Elixir (2.3%)", "Cairo (2.0%)", "Shell (1.6%)", "JavaScript (1.3%)", "Mojo (1.2%)", "CSS (0.9%)", "Go (0.4%)", "Rust (0.4%)", "Gleam (0.2%)", "Move (0.1%)", "Solidity (0.1%)", "Batchfile (0.1%)", "Dockerfile (0.1%)", "Roc (0.1%)", "Pony (0.1%)", "C (0.0%)", "Noir (0.0%)", "Gnuplot (0.0%)", "Makefile (0.0%)", "Clarity (0.0%)", "PowerShell (0.0%)", "Leo (0.0%)"]
     y-axis "KB"
-    bar [2095.91, 1932.76, 1161.96, 510.29, 446.91, 343.93, 283.41, 176.6, 149.42, 124.34, 96.07, 89.29, 71.2, 32.03, 28.25, 15.66, 8.83, 6.65, 6.48, 4.76, 4.5, 4.41, 2.58, 2.46, 1.82, 1.71, 1.53, 1.02, 0.26]
+    bar [2095.91, 1938.79, 1161.96, 510.29, 446.91, 343.93, 283.41, 176.6, 149.42, 124.34, 96.07, 89.29, 71.2, 32.03, 28.25, 15.66, 8.83, 6.65, 6.48, 4.76, 4.5, 4.41, 2.58, 2.46, 1.82, 1.71, 1.53, 1.02, 0.26]
 ```
 <!-- LANG-CHART:END -->
 
@@ -87,7 +87,7 @@ xychart-beta horizontal
 <!-- CONTRIBUTORS:START -->
 <table style="border-collapse: collapse; border: none;">
   <tr>
-    <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/pradeeban"><img src="https://avatars.githubusercontent.com/u/225631?v=4" width="100px;" alt="pradeeban" style="border-radius: 50%;"/><br /><sub><b>pradeeban</b></sub></a><br /><sub>2632 contributions</sub></td>
+    <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/pradeeban"><img src="https://avatars.githubusercontent.com/u/225631?v=4" width="100px;" alt="pradeeban" style="border-radius: 50%;"/><br /><sub><b>pradeeban</b></sub></a><br /><sub>2633 contributions</sub></td>
     <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/iprasannamb"><img src="https://avatars.githubusercontent.com/u/187874908?v=4" width="100px;" alt="iprasannamb" style="border-radius: 50%;"/><br /><sub><b>iprasannamb</b></sub></a><br /><sub>224 contributions</sub></td>
     <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/mdxabu"><img src="https://avatars.githubusercontent.com/u/115330277?v=4" width="100px;" alt="mdxabu" style="border-radius: 50%;"/><br /><sub><b>mdxabu</b></sub></a><br /><sub>188 contributions</sub></td>
     <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/shivamyadavrgipt"><img src="https://avatars.githubusercontent.com/u/164716426?v=4" width="100px;" alt="shivamyadavrgipt" style="border-radius: 50%;"/><br /><sub><b>shivamyadavrgipt</b></sub></a><br /><sub>168 contributions</sub></td>
@@ -110,9 +110,9 @@ xychart-beta horizontal
   <tr>
     <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/AnvayKharb"><img src="https://avatars.githubusercontent.com/u/185811796?v=4" width="100px;" alt="AnvayKharb" style="border-radius: 50%;"/><br /><sub><b>AnvayKharb</b></sub></a><br /><sub>47 contributions</sub></td>
     <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/kartikeyg0104"><img src="https://avatars.githubusercontent.com/u/180191571?v=4" width="100px;" alt="kartikeyg0104" style="border-radius: 50%;"/><br /><sub><b>kartikeyg0104</b></sub></a><br /><sub>45 contributions</sub></td>
+    <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/yadavchiragg"><img src="https://avatars.githubusercontent.com/u/181913833?v=4" width="100px;" alt="yadavchiragg" style="border-radius: 50%;"/><br /><sub><b>yadavchiragg</b></sub></a><br /><sub>37 contributions</sub></td>
     <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/AbrhamYishak"><img src="https://avatars.githubusercontent.com/u/136889996?v=4" width="100px;" alt="AbrhamYishak" style="border-radius: 50%;"/><br /><sub><b>AbrhamYishak</b></sub></a><br /><sub>36 contributions</sub></td>
     <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/kallal79"><img src="https://avatars.githubusercontent.com/u/182690849?v=4" width="100px;" alt="kallal79" style="border-radius: 50%;"/><br /><sub><b>kallal79</b></sub></a><br /><sub>36 contributions</sub></td>
-    <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/yadavchiragg"><img src="https://avatars.githubusercontent.com/u/181913833?v=4" width="100px;" alt="yadavchiragg" style="border-radius: 50%;"/><br /><sub><b>yadavchiragg</b></sub></a><br /><sub>35 contributions</sub></td>
   </tr>
 </table>
 <!-- CONTRIBUTORS:END -->
