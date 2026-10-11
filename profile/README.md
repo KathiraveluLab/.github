@@ -7,11 +7,11 @@ We build open-source research frameworks in distributed systems, healthcare info
 ## 🔬 Projects
 
 <!-- REPO-LIST:START -->
-> Last updated: 2026-10-11 05:59 UTC · 49 active public repositories
+> Last updated: 2026-10-11 17:43 UTC · 49 active public repositories
 
 | Repository | Language | Description | Stars | Forks | Commits |
 | --- | :---: | --- | :---: | :---: | :---: |
-| [**.github**](https://github.com/KathiraveluLab/.github) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) |  | ⭐ 1 | 🍴 1 | 🚀 392 |
+| [**.github**](https://github.com/KathiraveluLab/.github) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) |  | ⭐ 1 | 🍴 1 | 🚀 393 |
 | [**Alaskan-Season-of-Code**](https://github.com/KathiraveluLab/Alaskan-Season-of-Code) | — | A repository to hold the project ideas and past and current participants of Alaskan Season of Code |  |  | 🚀 12 |
 | [**Ararat**](https://github.com/KathiraveluLab/Ararat) | ![Mojo](https://img.shields.io/badge/Mojo-FF6700?style=flat-square&logo=mojo&logoColor=white) | DHG Workflow Executor |  | 🍴 1 | 🚀 34 |
 | [**AWANTA**](https://github.com/KathiraveluLab/AWANTA) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | An SD-WAN framework for telehealth access | ⭐ 4 | 🍴 6 | 🚀 301 |
@@ -31,7 +31,7 @@ We build open-source research frameworks in distributed systems, healthcare info
 | [**DWiM**](https://github.com/KathiraveluLab/DWiM) | ![MATLAB](https://img.shields.io/badge/MATLAB-8A8A8A?style=flat-square&logo=matlab&logoColor=white) | DICOM Workflows in MATLAB | ⭐ 1 | 🍴 4 | 🚀 234 |
 | [**Epicue**](https://github.com/KathiraveluLab/Epicue) | ![Cairo](https://img.shields.io/badge/Cairo-8A8A8A?style=flat-square&logo=cairo&logoColor=white) | Equity, Privacy, and Integrity with Cairo in Untrusted Environments |  |  | 🚀 99 |
 | [**Evora**](https://github.com/KathiraveluLab/Evora) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | Composing network service chains at the edge: A Resilient and adaptive software‐defined approach |  |  | 🚀 60 |
-| [**Faro**](https://github.com/KathiraveluLab/Faro) | ![Go](https://img.shields.io/badge/Go-00ACD7?style=flat-square&logo=go&logoColor=white) | Near-duplicate detection | ⭐ 2 | 🍴 2 | 🚀 29 |
+| [**Faro**](https://github.com/KathiraveluLab/Faro) | ![Go](https://img.shields.io/badge/Go-00ACD7?style=flat-square&logo=go&logoColor=white) | Near-duplicate detection | ⭐ 2 | 🍴 3 | 🚀 29 |
 | [**FIRM**](https://github.com/KathiraveluLab/FIRM) | ![Mojo](https://img.shields.io/badge/Mojo-FF6700?style=flat-square&logo=mojo&logoColor=white) | Find, Invoke, Return, and Manage |  |  | 🚀 17 |
 | [**GUARDA**](https://github.com/KathiraveluLab/GUARDA) | ![Elixir](https://img.shields.io/badge/Elixir-6E4A7E?style=flat-square&logo=elixir&logoColor=white) | Gateway for Uniform Access to Remote Data and Analytics |  | 🍴 1 | 🚀 19 |
 | [**IGUANA**](https://github.com/KathiraveluLab/IGUANA) | ![Erlang](https://img.shields.io/badge/Erlang-8A8A8A?style=flat-square&logo=erlang&logoColor=white) | Integrated Guardrails for Unbiased and Adaptive Neural Network Architectures |  |  | 🚀 132 |
