@@ -7,11 +7,11 @@ We build open-source research frameworks in distributed systems, healthcare info
 ## 🔬 Projects
 
 <!-- REPO-LIST:START -->
-> Last updated: 2026-10-12 06:09 UTC · 49 active public repositories
+> Last updated: 2026-10-12 21:19 UTC · 49 active public repositories
 
 | Repository | Language | Description | Stars | Forks | Commits |
 | --- | :---: | --- | :---: | :---: | :---: |
-| [**.github**](https://github.com/KathiraveluLab/.github) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) |  | ⭐ 1 | 🍴 1 | 🚀 394 |
+| [**.github**](https://github.com/KathiraveluLab/.github) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) |  | ⭐ 1 | 🍴 1 | 🚀 395 |
 | [**Alaskan-Season-of-Code**](https://github.com/KathiraveluLab/Alaskan-Season-of-Code) | — | A repository to hold the project ideas and past and current participants of Alaskan Season of Code |  |  | 🚀 12 |
 | [**Ararat**](https://github.com/KathiraveluLab/Ararat) | ![Mojo](https://img.shields.io/badge/Mojo-FF6700?style=flat-square&logo=mojo&logoColor=white) | DHG Workflow Executor |  | 🍴 1 | 🚀 34 |
 | [**AWANTA**](https://github.com/KathiraveluLab/AWANTA) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | An SD-WAN framework for telehealth access | ⭐ 4 | 🍴 6 | 🚀 301 |
@@ -25,7 +25,7 @@ We build open-source research frameworks in distributed systems, healthcare info
 | [**CSCEA365-Group-Projects**](https://github.com/KathiraveluLab/CSCEA365-Group-Projects) | — |  |  | 🍴 9 | 🚀 3 |
 | [**Diomede**](https://github.com/KathiraveluLab/Diomede) | ![HTML](https://img.shields.io/badge/HTML-E34C26?style=flat-square&logo=html&logoColor=white) | DICOM Telemedicine Toolkit | ⭐ 18 | 🍴 34 | 🚀 441 |
 | [**Distributed-Computing**](https://github.com/KathiraveluLab/Distributed-Computing) | ![Erlang](https://img.shields.io/badge/Erlang-8A8A8A?style=flat-square&logo=erlang&logoColor=white) | Class resources for the Distributed Computing course |  |  | 🚀 11 |
-| [**Dragonfly**](https://github.com/KathiraveluLab/Dragonfly) | — | Distributed Computing Sample Project |  | 🍴 23 | 🚀 3 |
+| [**Dragonfly**](https://github.com/KathiraveluLab/Dragonfly) | — | Distributed Computing Sample Project |  | 🍴 24 | 🚀 3 |
 | [**DREAMS**](https://github.com/KathiraveluLab/DREAMS) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | Digitization for Recovery: Exploring Arts with Mining for Societal well-being. | ⭐ 7 | 🍴 31 | 🚀 621 |
 | [**dudu**](https://github.com/KathiraveluLab/dudu) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | Distributed Near Duplicate Detection for Big Data |  |  | 🚀 40 |
 | [**DWiM**](https://github.com/KathiraveluLab/DWiM) | ![MATLAB](https://img.shields.io/badge/MATLAB-8A8A8A?style=flat-square&logo=matlab&logoColor=white) | DICOM Workflows in MATLAB | ⭐ 1 | 🍴 4 | 🚀 234 |
@@ -50,7 +50,7 @@ We build open-source research frameworks in distributed systems, healthcare info
 | [**SD-CPS**](https://github.com/KathiraveluLab/SD-CPS) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | Software-Defined Cyber-Physical Systems |  |  | 🚀 43 |
 | [**SDDS**](https://github.com/KathiraveluLab/SDDS) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | Software-Defined Data Services |  |  | 🚀 18 |
 | [**SENDIM**](https://github.com/KathiraveluLab/SENDIM) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | A Simulation, Emulation, aNd Deployment Integration Middleware for cloud networks. |  |  | 🚀 12 |
-| [**SFILS**](https://github.com/KathiraveluLab/SFILS) | — | An integrated library system for the San Francisco Public Library. |  | 🍴 31 | 🚀 10 |
+| [**SFILS**](https://github.com/KathiraveluLab/SFILS) | — | An integrated library system for the San Francisco Public Library. |  | 🍴 32 | 🚀 10 |
 | [**Sintra**](https://github.com/KathiraveluLab/Sintra) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | Self-adaptive Interdomain Network Transport for Real-Time Applications | ⭐ 3 | 🍴 6 | 🚀 104 |
 | [**SMART**](https://github.com/KathiraveluLab/SMART) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | SDN Middlebox Architecture for Resilient Transfers |  |  | 🚀 33 |
 | [**SOFIA**](https://github.com/KathiraveluLab/SOFIA) | ![Erlang](https://img.shields.io/badge/Erlang-8A8A8A?style=flat-square&logo=erlang&logoColor=white) | Service-Oriented Federated Interoperability Architecture |  |  | 🚀 55 |
