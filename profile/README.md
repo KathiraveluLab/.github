@@ -7,11 +7,11 @@ We build open-source research frameworks in distributed systems, healthcare info
 ## 🔬 Projects
 
 <!-- REPO-LIST:START -->
-> Last updated: 2026-10-21 05:00 UTC · 48 active public repositories
+> Last updated: 2026-10-21 17:21 UTC · 48 active public repositories
 
 | Repository | Language | Description | Stars | Forks | Commits |
 | --- | :---: | --- | :---: | :---: | :---: |
-| [**.github**](https://github.com/KathiraveluLab/.github) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | .github repository | ⭐ 1 | 🍴 1 | 🚀 412 |
+| [**.github**](https://github.com/KathiraveluLab/.github) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | .github repository | ⭐ 1 | 🍴 1 | 🚀 413 |
 | [**Alaskan-Season-of-Code**](https://github.com/KathiraveluLab/Alaskan-Season-of-Code) | — | A repository to hold the project ideas and past and current participants of Alaskan Season of Code |  |  | 🚀 12 |
 | [**Ararat**](https://github.com/KathiraveluLab/Ararat) | ![Mojo](https://img.shields.io/badge/Mojo-FF6700?style=flat-square&logo=mojo&logoColor=white) | DHG Workflow Executor |  | 🍴 1 | 🚀 37 |
 | [**AWANTA**](https://github.com/KathiraveluLab/AWANTA) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | An SD-WAN framework for telehealth access | ⭐ 4 | 🍴 6 | 🚀 311 |
@@ -22,14 +22,14 @@ We build open-source research frameworks in distributed systems, healthcare info
 | [**Cloud2Sim**](https://github.com/KathiraveluLab/Cloud2Sim) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | An Adaptive and Distributed Architecture for Cloud and MapReduce Algorithms and Simulations. |  | 🍴 1 | 🚀 105 |
 | [**conf-chat**](https://github.com/KathiraveluLab/conf-chat) | — | A P2P Chat |  | 🍴 20 | 🚀 1 |
 | [**CSCEA365-Group-Projects**](https://github.com/KathiraveluLab/CSCEA365-Group-Projects) | — | CSCE A365 Group Project |  | 🍴 9 | 🚀 3 |
-| [**Diomede**](https://github.com/KathiraveluLab/Diomede) | ![HTML](https://img.shields.io/badge/HTML-E34C26?style=flat-square&logo=html&logoColor=white) | DICOM Telemedicine Toolkit | ⭐ 18 | 🍴 35 | 🚀 475 |
+| [**Diomede**](https://github.com/KathiraveluLab/Diomede) | ![HTML](https://img.shields.io/badge/HTML-E34C26?style=flat-square&logo=html&logoColor=white) | DICOM Telemedicine Toolkit | ⭐ 18 | 🍴 36 | 🚀 475 |
 | [**Distributed-Computing**](https://github.com/KathiraveluLab/Distributed-Computing) | ![Erlang](https://img.shields.io/badge/Erlang-8A8A8A?style=flat-square&logo=erlang&logoColor=white) | Class resources for the Distributed Computing course |  |  | 🚀 11 |
 | [**Dragonfly**](https://github.com/KathiraveluLab/Dragonfly) | — | Distributed Computing Sample Project |  | 🍴 27 | 🚀 3 |
 | [**DREAMS**](https://github.com/KathiraveluLab/DREAMS) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | Digitization for Recovery: Exploring Arts with Mining for Societal well-being. | ⭐ 8 | 🍴 32 | 🚀 680 |
 | [**dudu**](https://github.com/KathiraveluLab/dudu) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | Distributed Near Duplicate Detection for Big Data |  |  | 🚀 42 |
-| [**DWiM**](https://github.com/KathiraveluLab/DWiM) | ![MATLAB](https://img.shields.io/badge/MATLAB-8A8A8A?style=flat-square&logo=matlab&logoColor=white) | DICOM Workflows in MATLAB | ⭐ 1 | 🍴 4 | 🚀 234 |
+| [**DWiM**](https://github.com/KathiraveluLab/DWiM) | ![MATLAB](https://img.shields.io/badge/MATLAB-8A8A8A?style=flat-square&logo=matlab&logoColor=white) | DICOM Workflows in MATLAB | ⭐ 1 | 🍴 5 | 🚀 234 |
 | [**Epicue**](https://github.com/KathiraveluLab/Epicue) | ![Cairo](https://img.shields.io/badge/Cairo-8A8A8A?style=flat-square&logo=cairo&logoColor=white) | Equity, Privacy, and Integrity with Cairo in Untrusted Environments |  |  | 🚀 99 |
-| [**Evora**](https://github.com/KathiraveluLab/Evora) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | Composing network service chains at the edge: A Resilient and adaptive software‐defined approach |  |  | 🚀 70 |
+| [**Evora**](https://github.com/KathiraveluLab/Evora) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | Composing network service chains at the edge: A Resilient and adaptive software‐defined approach |  | 🍴 1 | 🚀 70 |
 | [**Faro**](https://github.com/KathiraveluLab/Faro) | ![Go](https://img.shields.io/badge/Go-00ACD7?style=flat-square&logo=go&logoColor=white) | Near-duplicate detection | ⭐ 2 | 🍴 3 | 🚀 37 |
 | [**FIRM**](https://github.com/KathiraveluLab/FIRM) | ![Mojo](https://img.shields.io/badge/Mojo-FF6700?style=flat-square&logo=mojo&logoColor=white) | Find, Invoke, Return, and Manage |  |  | 🚀 17 |
 | [**GUARDA**](https://github.com/KathiraveluLab/GUARDA) | ![Elixir](https://img.shields.io/badge/Elixir-6E4A7E?style=flat-square&logo=elixir&logoColor=white) | Gateway for Uniform Access to Remote Data and Analytics |  | 🍴 1 | 🚀 19 |
@@ -47,7 +47,7 @@ We build open-source research frameworks in distributed systems, healthcare info
 | [**robin**](https://github.com/KathiraveluLab/robin) | ![JavaScript](https://img.shields.io/badge/JavaScript-F1E05A?style=flat-square&logo=javascript&logoColor=white) | A NodeJS-based proxy for A/B testing |  | 🍴 1 | 🚀 128 |
 | [**sanfrancisco**](https://github.com/KathiraveluLab/sanfrancisco) | — | Data Mining Course Project |  | 🍴 24 | 🚀 3 |
 | [**SD-CPS**](https://github.com/KathiraveluLab/SD-CPS) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | Software-Defined Cyber-Physical Systems |  |  | 🚀 53 |
-| [**SDDS**](https://github.com/KathiraveluLab/SDDS) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | Software-Defined Data Services |  |  | 🚀 22 |
+| [**SDDS**](https://github.com/KathiraveluLab/SDDS) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | Software-Defined Data Services |  | 🍴 1 | 🚀 22 |
 | [**SENDIM**](https://github.com/KathiraveluLab/SENDIM) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | A Simulation, Emulation, aNd Deployment Integration Middleware for cloud networks. |  |  | 🚀 14 |
 | [**SFILS**](https://github.com/KathiraveluLab/SFILS) | — | An integrated library system for the San Francisco Public Library. |  | 🍴 32 | 🚀 10 |
 | [**Sintra**](https://github.com/KathiraveluLab/Sintra) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | Self-adaptive Interdomain Network Transport for Real-Time Applications | ⭐ 3 | 🍴 6 | 🚀 108 |
