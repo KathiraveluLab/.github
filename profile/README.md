@@ -7,11 +7,11 @@ We build open-source research frameworks in distributed systems, healthcare info
 ## 🔬 Projects
 
 <!-- REPO-LIST:START -->
-> Last updated: 2026-11-08 17:58 UTC · 47 active public repositories
+> Last updated: 2026-11-09 06:50 UTC · 48 active public repositories
 
 | Repository | Language | Description | Stars | Forks | Commits |
 | --- | :---: | --- | :---: | :---: | :---: |
-| [**.github**](https://github.com/KathiraveluLab/.github) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | .github repository | ⭐ 1 | 🍴 1 | 🚀 449 |
+| [**.github**](https://github.com/KathiraveluLab/.github) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | .github repository | ⭐ 1 | 🍴 1 | 🚀 450 |
 | [**Acer-Swift-Go-16-AI-Bugs**](https://github.com/KathiraveluLab/Acer-Swift-Go-16-AI-Bugs) | ![PowerShell](https://img.shields.io/badge/PowerShell-8A8A8A?style=flat-square&logo=powershell&logoColor=white) | Bugs encountered in Acer Swift Go 16 AI |  |  | 🚀 3 |
 | [**Alaskan-Season-of-Code**](https://github.com/KathiraveluLab/Alaskan-Season-of-Code) | — | A repository to hold the project ideas and past and current participants of Alaskan Season of Code |  |  | 🚀 12 |
 | [**Ararat**](https://github.com/KathiraveluLab/Ararat) | ![Mojo](https://img.shields.io/badge/Mojo-FF6700?style=flat-square&logo=mojo&logoColor=white) | DHG Workflow Executor |  | 🍴 1 | 🚀 37 |
@@ -26,13 +26,14 @@ We build open-source research frameworks in distributed systems, healthcare info
 | [**Diomede**](https://github.com/KathiraveluLab/Diomede) | ![HTML](https://img.shields.io/badge/HTML-E34C26?style=flat-square&logo=html&logoColor=white) | Dynamic DICOM Endpoint Routing | ⭐ 17 | 🍴 40 | 🚀 511 |
 | [**Distributed-Computing**](https://github.com/KathiraveluLab/Distributed-Computing) | ![Erlang](https://img.shields.io/badge/Erlang-8A8A8A?style=flat-square&logo=erlang&logoColor=white) | Class resources for the Distributed Computing course |  |  | 🚀 11 |
 | [**Dragonfly**](https://github.com/KathiraveluLab/Dragonfly) | — | Distributed Computing Sample Project |  | 🍴 27 | 🚀 3 |
-| [**DREAMS**](https://github.com/KathiraveluLab/DREAMS) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | Digitization for Recovery: Exploring Arts with Mining for Societal well-being. | ⭐ 8 | 🍴 32 | 🚀 680 |
+| [**DREAMS**](https://github.com/KathiraveluLab/DREAMS) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | Digitization for Recovery: Exploring Arts with Mining for Societal well-being. | ⭐ 8 | 🍴 32 | 🚀 684 |
 | [**dudu**](https://github.com/KathiraveluLab/dudu) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | Distributed Near Duplicate Detection for Big Data |  |  | 🚀 42 |
 | [**DWiM**](https://github.com/KathiraveluLab/DWiM) | ![MATLAB](https://img.shields.io/badge/MATLAB-8A8A8A?style=flat-square&logo=matlab&logoColor=white) | DICOM Workflows in MATLAB | ⭐ 1 | 🍴 5 | 🚀 234 |
 | [**Epicue**](https://github.com/KathiraveluLab/Epicue) | ![Cairo](https://img.shields.io/badge/Cairo-8A8A8A?style=flat-square&logo=cairo&logoColor=white) | Equity, Privacy, and Integrity with Cairo in Untrusted Environments |  |  | 🚀 99 |
 | [**Evora**](https://github.com/KathiraveluLab/Evora) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | Composing network service chains at the edge: A Resilient and adaptive software‐defined approach |  | 🍴 1 | 🚀 70 |
 | [**Faro**](https://github.com/KathiraveluLab/Faro) | ![Go](https://img.shields.io/badge/Go-00ACD7?style=flat-square&logo=go&logoColor=white) | Near-duplicate detection | ⭐ 2 | 🍴 3 | 🚀 37 |
 | [**FIRM**](https://github.com/KathiraveluLab/FIRM) | ![Mojo](https://img.shields.io/badge/Mojo-FF6700?style=flat-square&logo=mojo&logoColor=white) | Find, Invoke, Return, and Manage |  |  | 🚀 17 |
+| [**geo-el**](https://github.com/KathiraveluLab/geo-el) | ![Elixir](https://img.shields.io/badge/Elixir-6E4A7E?style=flat-square&logo=elixir&logoColor=white) | This is a geography game written in Elixir |  |  | 🚀 13 |
 | [**GUARDA**](https://github.com/KathiraveluLab/GUARDA) | ![Elixir](https://img.shields.io/badge/Elixir-6E4A7E?style=flat-square&logo=elixir&logoColor=white) | Gateway for Uniform Access to Remote Data and Analytics |  | 🍴 1 | 🚀 19 |
 | [**IGUANA**](https://github.com/KathiraveluLab/IGUANA) | ![Erlang](https://img.shields.io/badge/Erlang-8A8A8A?style=flat-square&logo=erlang&logoColor=white) | Integrated Guardrails for Unbiased and Adaptive Neural Network Architectures |  |  | 🚀 133 |
 | [**L4SBOA**](https://github.com/KathiraveluLab/L4SBOA) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | L4S Bandwidth Orchestration Architecture | ⭐ 5 | 🍴 6 | 🚀 245 |
@@ -66,9 +67,9 @@ We build open-source research frameworks in distributed systems, healthcare info
 ```mermaid
 xychart-beta horizontal
     title "Language Distribution by Code Volume (KB)"
-    x-axis ["Java (26.3%)", "Python (24.4%)", "HTML (14.6%)", "TypeScript (9.1%)", "Jupyter Notebook (5.6%)", "MATLAB (4.3%)", "Erlang (3.6%)", "Elixir (2.2%)", "Cairo (1.9%)", "CSS (1.9%)", "Shell (1.6%)", "JavaScript (1.4%)", "Mojo (1.2%)", "Go (0.4%)", "Rust (0.4%)", "Gleam (0.2%)", "PowerShell (0.2%)", "Move (0.2%)", "Solidity (0.1%)", "Batchfile (0.1%)", "Pony (0.1%)", "Roc (0.1%)", "Dockerfile (0.1%)", "Makefile (0.0%)", "C (0.0%)", "Noir (0.0%)", "Gnuplot (0.0%)", "Clarity (0.0%)", "Leo (0.0%)"]
+    x-axis ["Java (25.8%)", "Python (24.0%)", "HTML (14.4%)", "TypeScript (9.0%)", "Jupyter Notebook (5.5%)", "MATLAB (4.2%)", "Erlang (3.6%)", "Elixir (3.6%)", "CSS (2.0%)", "Cairo (1.9%)", "Shell (1.6%)", "JavaScript (1.4%)", "Mojo (1.2%)", "Go (0.4%)", "Rust (0.3%)", "Gleam (0.2%)", "PowerShell (0.2%)", "Move (0.2%)", "Batchfile (0.1%)", "Solidity (0.1%)", "Pony (0.1%)", "Roc (0.1%)", "Dockerfile (0.1%)", "Makefile (0.0%)", "C (0.0%)", "Noir (0.0%)", "Gnuplot (0.0%)", "Clarity (0.0%)", "Leo (0.0%)"]
     y-axis "KB"
-    bar [2094.5, 1945.64, 1163.33, 728.35, 446.91, 343.93, 289.93, 176.6, 151.31, 149.79, 125.87, 110.01, 99.52, 32.03, 28.25, 18.9, 13.91, 12.89, 6.65, 6.48, 6.01, 5.51, 5.12, 3.74, 2.58, 2.46, 1.82, 1.53, 0.26]
+    bar [2094.5, 1945.64, 1163.33, 728.35, 446.91, 343.93, 289.93, 288.67, 160.38, 151.31, 127.55, 114.88, 99.52, 32.03, 28.25, 18.9, 13.91, 12.89, 8.48, 6.65, 6.01, 5.51, 5.12, 3.74, 2.58, 2.46, 1.82, 1.53, 0.26]
 ```
 <!-- LANG-CHART:END -->
 
@@ -85,7 +86,7 @@ xychart-beta horizontal
 <!-- CONTRIBUTORS:START -->
 <table style="border-collapse: collapse; border: none;">
   <tr>
-    <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/pradeeban"><img src="https://avatars.githubusercontent.com/u/225631?v=4" width="100px;" alt="pradeeban" style="border-radius: 50%;"/><br /><sub><b>pradeeban</b></sub></a><br /><sub>2837 contributions</sub></td>
+    <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/pradeeban"><img src="https://avatars.githubusercontent.com/u/225631?v=4" width="100px;" alt="pradeeban" style="border-radius: 50%;"/><br /><sub><b>pradeeban</b></sub></a><br /><sub>2852 contributions</sub></td>
     <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/iprasannamb"><img src="https://avatars.githubusercontent.com/u/187874908?v=4" width="100px;" alt="iprasannamb" style="border-radius: 50%;"/><br /><sub><b>iprasannamb</b></sub></a><br /><sub>224 contributions</sub></td>
     <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/mdxabu"><img src="https://avatars.githubusercontent.com/u/115330277?v=4" width="100px;" alt="mdxabu" style="border-radius: 50%;"/><br /><sub><b>mdxabu</b></sub></a><br /><sub>175 contributions</sub></td>
     <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/dakshhhhh16"><img src="https://avatars.githubusercontent.com/u/213169480?v=4" width="100px;" alt="dakshhhhh16" style="border-radius: 50%;"/><br /><sub><b>dakshhhhh16</b></sub></a><br /><sub>173 contributions</sub></td>
