@@ -7,11 +7,11 @@ We build open-source research frameworks in distributed systems, healthcare info
 ## 🔬 Projects
 
 <!-- REPO-LIST:START -->
-> Last updated: 2026-11-17 08:06 UTC · 52 active public repositories
+> Last updated: 2026-11-17 21:04 UTC · 52 active public repositories
 
 | Repository | Language | Description | Stars | Forks | Commits |
 | --- | :---: | --- | :---: | :---: | :---: |
-| [**.github**](https://github.com/KathiraveluLab/.github) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | .github repository | ⭐ 1 | 🍴 1 | 🚀 466 |
+| [**.github**](https://github.com/KathiraveluLab/.github) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | .github repository | ⭐ 1 | 🍴 1 | 🚀 467 |
 | [**Acer-Swift-Go-16-AI-Bugs**](https://github.com/KathiraveluLab/Acer-Swift-Go-16-AI-Bugs) | ![PowerShell](https://img.shields.io/badge/PowerShell-8A8A8A?style=flat-square&logo=powershell&logoColor=white) | Bugs encountered in Acer Swift Go 16 AI |  |  | 🚀 3 |
 | [**AirportSim**](https://github.com/KathiraveluLab/AirportSim) | ![Elixir](https://img.shields.io/badge/Elixir-6E4A7E?style=flat-square&logo=elixir&logoColor=white) | CSCEA365-Assignment-1 |  |  | 🚀 4 |
 | [**Alaskan-Season-of-Code**](https://github.com/KathiraveluLab/Alaskan-Season-of-Code) | — | A repository to hold the project ideas and past and current participants of Alaskan Season of Code |  |  | 🚀 12 |
@@ -26,7 +26,7 @@ We build open-source research frameworks in distributed systems, healthcare info
 | [**conf-chat**](https://github.com/KathiraveluLab/conf-chat) | — | A P2P Chat |  | 🍴 21 | 🚀 1 |
 | [**CSCEA365-Group-Projects**](https://github.com/KathiraveluLab/CSCEA365-Group-Projects) | — | CSCE A365 Group Project |  | 🍴 9 | 🚀 3 |
 | [**DataLake**](https://github.com/KathiraveluLab/DataLake) | ![Elixir](https://img.shields.io/badge/Elixir-6E4A7E?style=flat-square&logo=elixir&logoColor=white) | DataLake Demo |  |  | 🚀 4 |
-| [**Diomede**](https://github.com/KathiraveluLab/Diomede) | ![HTML](https://img.shields.io/badge/HTML-E34C26?style=flat-square&logo=html&logoColor=white) | Dynamic DICOM Endpoint Routing | ⭐ 17 | 🍴 45 | 🚀 511 |
+| [**Diomede**](https://github.com/KathiraveluLab/Diomede) | ![HTML](https://img.shields.io/badge/HTML-E34C26?style=flat-square&logo=html&logoColor=white) | Dynamic DICOM Endpoint Routing | ⭐ 17 | 🍴 46 | 🚀 511 |
 | [**Distributed-Computing**](https://github.com/KathiraveluLab/Distributed-Computing) | ![Erlang](https://img.shields.io/badge/Erlang-8A8A8A?style=flat-square&logo=erlang&logoColor=white) | Class resources for the Distributed Computing course |  |  | 🚀 11 |
 | [**Dragonfly**](https://github.com/KathiraveluLab/Dragonfly) | — | Distributed Computing Sample Project |  | 🍴 27 | 🚀 3 |
 | [**DREAMS**](https://github.com/KathiraveluLab/DREAMS) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | Digitization for Recovery: Exploring Arts with Mining for Societal well-being. | ⭐ 8 | 🍴 33 | 🚀 698 |
