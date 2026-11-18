@@ -7,11 +7,12 @@ We build open-source research frameworks in distributed systems, healthcare info
 ## 🔬 Projects
 
 <!-- REPO-LIST:START -->
-> Last updated: 2026-11-17 21:04 UTC · 52 active public repositories
+> Last updated: 2026-11-18 07:41 UTC · 54 active public repositories
 
 | Repository | Language | Description | Stars | Forks | Commits |
 | --- | :---: | --- | :---: | :---: | :---: |
-| [**.github**](https://github.com/KathiraveluLab/.github) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | .github repository | ⭐ 1 | 🍴 1 | 🚀 467 |
+| [**.github**](https://github.com/KathiraveluLab/.github) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | .github repository | ⭐ 1 | 🍴 1 | 🚀 468 |
+| [**3-Chess**](https://github.com/KathiraveluLab/3-Chess) | ![Elixir](https://img.shields.io/badge/Elixir-6E4A7E?style=flat-square&logo=elixir&logoColor=white) | A 3-player chess game |  |  | 🚀 6 |
 | [**Acer-Swift-Go-16-AI-Bugs**](https://github.com/KathiraveluLab/Acer-Swift-Go-16-AI-Bugs) | ![PowerShell](https://img.shields.io/badge/PowerShell-8A8A8A?style=flat-square&logo=powershell&logoColor=white) | Bugs encountered in Acer Swift Go 16 AI |  |  | 🚀 3 |
 | [**AirportSim**](https://github.com/KathiraveluLab/AirportSim) | ![Elixir](https://img.shields.io/badge/Elixir-6E4A7E?style=flat-square&logo=elixir&logoColor=white) | CSCEA365-Assignment-1 |  |  | 🚀 4 |
 | [**Alaskan-Season-of-Code**](https://github.com/KathiraveluLab/Alaskan-Season-of-Code) | — | A repository to hold the project ideas and past and current participants of Alaskan Season of Code |  |  | 🚀 12 |
@@ -34,6 +35,7 @@ We build open-source research frameworks in distributed systems, healthcare info
 | [**DWiM**](https://github.com/KathiraveluLab/DWiM) | ![MATLAB](https://img.shields.io/badge/MATLAB-8A8A8A?style=flat-square&logo=matlab&logoColor=white) | DICOM Workflows in MATLAB | ⭐ 1 | 🍴 5 | 🚀 234 |
 | [**Epicue**](https://github.com/KathiraveluLab/Epicue) | ![Cairo](https://img.shields.io/badge/Cairo-8A8A8A?style=flat-square&logo=cairo&logoColor=white) | Equity, Privacy, and Integrity with Cairo in Untrusted Environments |  |  | 🚀 99 |
 | [**Evora**](https://github.com/KathiraveluLab/Evora) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | Composing network service chains at the edge: A Resilient and adaptive software‐defined approach |  | 🍴 1 | 🚀 70 |
+| [**Explore**](https://github.com/KathiraveluLab/Explore) | ![JavaScript](https://img.shields.io/badge/JavaScript-F1E05A?style=flat-square&logo=javascript&logoColor=white) | A game inspired by Portugal |  |  | 🚀 3 |
 | [**Faro**](https://github.com/KathiraveluLab/Faro) | ![Go](https://img.shields.io/badge/Go-00ACD7?style=flat-square&logo=go&logoColor=white) | Near-duplicate detection | ⭐ 2 | 🍴 3 | 🚀 37 |
 | [**FIRM**](https://github.com/KathiraveluLab/FIRM) | ![Mojo](https://img.shields.io/badge/Mojo-FF6700?style=flat-square&logo=mojo&logoColor=white) | Find, Invoke, Return, and Manage |  |  | 🚀 17 |
 | [**geo-el**](https://github.com/KathiraveluLab/geo-el) | ![Elixir](https://img.shields.io/badge/Elixir-6E4A7E?style=flat-square&logo=elixir&logoColor=white) | This is a geography game written in Elixir |  |  | 🚀 18 |
@@ -71,9 +73,9 @@ We build open-source research frameworks in distributed systems, healthcare info
 ```mermaid
 xychart-beta horizontal
     title "Language Distribution by Code Volume (KB)"
-    x-axis ["Java (24.4%)", "Python (24.4%)", "HTML (13.7%)", "TypeScript (8.9%)", "Elixir (5.8%)", "Jupyter Notebook (5.2%)", "MATLAB (4.0%)", "Erlang (3.4%)", "CSS (2.0%)", "JavaScript (1.8%)", "Cairo (1.8%)", "Shell (1.5%)", "Mojo (1.2%)", "Go (0.4%)", "Roc (0.4%)", "Rust (0.3%)", "Gleam (0.2%)", "PowerShell (0.2%)", "Move (0.2%)", "Batchfile (0.1%)", "Solidity (0.1%)", "Dockerfile (0.1%)", "Pony (0.1%)", "Makefile (0.0%)", "C (0.0%)", "Noir (0.0%)", "Gnuplot (0.0%)", "Clarity (0.0%)", "Leo (0.0%)"]
+    x-axis ["Java (23.7%)", "Python (23.6%)", "HTML (13.4%)", "TypeScript (8.6%)", "Elixir (6.3%)", "Jupyter Notebook (5.0%)", "MATLAB (3.9%)", "Erlang (3.3%)", "JavaScript (3.1%)", "CSS (2.1%)", "Cairo (1.7%)", "Shell (1.4%)", "Mojo (1.1%)", "Zig (0.7%)", "Go (0.4%)", "Roc (0.3%)", "Rust (0.3%)", "Gleam (0.2%)", "PowerShell (0.2%)", "Move (0.1%)", "Batchfile (0.1%)", "Solidity (0.1%)", "Dockerfile (0.1%)", "Pony (0.1%)", "Makefile (0.0%)", "C (0.0%)", "Noir (0.0%)", "Gnuplot (0.0%)", "Clarity (0.0%)", "Leo (0.0%)"]
     y-axis "KB"
-    bar [2094.5, 2089.51, 1170.55, 763.92, 493.85, 446.91, 343.93, 289.93, 171.39, 152.99, 151.31, 127.55, 99.52, 32.03, 30.88, 28.25, 18.9, 13.91, 12.89, 8.48, 6.65, 6.34, 6.01, 3.74, 2.58, 2.46, 1.82, 1.53, 0.26]
+    bar [2094.5, 2089.51, 1185.41, 763.92, 558.82, 446.91, 343.93, 289.93, 276.36, 189.89, 151.31, 127.55, 99.52, 58.03, 32.03, 30.88, 28.25, 18.9, 13.91, 12.89, 8.48, 6.65, 6.34, 6.01, 3.74, 2.58, 2.46, 1.82, 1.53, 0.26]
 ```
 <!-- LANG-CHART:END -->
 
@@ -90,7 +92,7 @@ xychart-beta horizontal
 <!-- CONTRIBUTORS:START -->
 <table style="border-collapse: collapse; border: none;">
   <tr>
-    <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/pradeeban"><img src="https://avatars.githubusercontent.com/u/225631?v=4" width="100px;" alt="pradeeban" style="border-radius: 50%;"/><br /><sub><b>pradeeban</b></sub></a><br /><sub>2891 contributions</sub></td>
+    <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/pradeeban"><img src="https://avatars.githubusercontent.com/u/225631?v=4" width="100px;" alt="pradeeban" style="border-radius: 50%;"/><br /><sub><b>pradeeban</b></sub></a><br /><sub>2900 contributions</sub></td>
     <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/iprasannamb"><img src="https://avatars.githubusercontent.com/u/187874908?v=4" width="100px;" alt="iprasannamb" style="border-radius: 50%;"/><br /><sub><b>iprasannamb</b></sub></a><br /><sub>224 contributions</sub></td>
     <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/mdxabu"><img src="https://avatars.githubusercontent.com/u/115330277?v=4" width="100px;" alt="mdxabu" style="border-radius: 50%;"/><br /><sub><b>mdxabu</b></sub></a><br /><sub>175 contributions</sub></td>
     <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/dakshhhhh16"><img src="https://avatars.githubusercontent.com/u/213169480?v=4" width="100px;" alt="dakshhhhh16" style="border-radius: 50%;"/><br /><sub><b>dakshhhhh16</b></sub></a><br /><sub>173 contributions</sub></td>
