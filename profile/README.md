@@ -7,12 +7,12 @@ We build open-source research frameworks in distributed systems, healthcare info
 ## 🔬 Projects
 
 <!-- REPO-LIST:START -->
-> Last updated: 2026-11-18 20:41 UTC · 54 active public repositories
+> Last updated: 2026-11-19 07:38 UTC · 55 active public repositories
 
 | Repository | Language | Description | Stars | Forks | Commits |
 | --- | :---: | --- | :---: | :---: | :---: |
-| [**.github**](https://github.com/KathiraveluLab/.github) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | .github repository | ⭐ 1 | 🍴 1 | 🚀 469 |
-| [**3-Chess**](https://github.com/KathiraveluLab/3-Chess) | ![Elixir](https://img.shields.io/badge/Elixir-6E4A7E?style=flat-square&logo=elixir&logoColor=white) | A 3-player chess game |  |  | 🚀 6 |
+| [**.github**](https://github.com/KathiraveluLab/.github) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | .github repository | ⭐ 1 | 🍴 1 | 🚀 470 |
+| [**3-Chess**](https://github.com/KathiraveluLab/3-Chess) | ![Elixir](https://img.shields.io/badge/Elixir-6E4A7E?style=flat-square&logo=elixir&logoColor=white) | A 3-player chess game |  |  | 🚀 8 |
 | [**Acer-Swift-Go-16-AI-Bugs**](https://github.com/KathiraveluLab/Acer-Swift-Go-16-AI-Bugs) | ![PowerShell](https://img.shields.io/badge/PowerShell-8A8A8A?style=flat-square&logo=powershell&logoColor=white) | Bugs encountered in Acer Swift Go 16 AI |  |  | 🚀 3 |
 | [**AirportSim**](https://github.com/KathiraveluLab/AirportSim) | ![Elixir](https://img.shields.io/badge/Elixir-6E4A7E?style=flat-square&logo=elixir&logoColor=white) | CSCEA365-Assignment-1 |  |  | 🚀 4 |
 | [**Alaskan-Season-of-Code**](https://github.com/KathiraveluLab/Alaskan-Season-of-Code) | — | A repository to hold the project ideas and past and current participants of Alaskan Season of Code |  |  | 🚀 12 |
@@ -24,7 +24,7 @@ We build open-source research frameworks in distributed systems, healthcare info
 | [**Cassowary**](https://github.com/KathiraveluLab/Cassowary) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | Middleware Platform for Context-Aware Smart Buildings with Software-Defined Sensor Networks |  |  | 🚀 69 |
 | [**CHIEF**](https://github.com/KathiraveluLab/CHIEF) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | Controller Farm for Clouds of Software-Defined Community Networks |  | 🍴 1 | 🚀 33 |
 | [**Cloud2Sim**](https://github.com/KathiraveluLab/Cloud2Sim) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | An Adaptive and Distributed Architecture for Cloud and MapReduce Algorithms and Simulations. |  | 🍴 1 | 🚀 105 |
-| [**conf-chat**](https://github.com/KathiraveluLab/conf-chat) | — | A P2P Chat |  | 🍴 24 | 🚀 1 |
+| [**conf-chat**](https://github.com/KathiraveluLab/conf-chat) | — | A P2P Chat |  | 🍴 25 | 🚀 1 |
 | [**CSCEA365-Group-Projects**](https://github.com/KathiraveluLab/CSCEA365-Group-Projects) | — | CSCE A365 Group Project |  | 🍴 9 | 🚀 3 |
 | [**DataLake**](https://github.com/KathiraveluLab/DataLake) | ![Elixir](https://img.shields.io/badge/Elixir-6E4A7E?style=flat-square&logo=elixir&logoColor=white) | DataLake Demo |  |  | 🚀 4 |
 | [**Diomede**](https://github.com/KathiraveluLab/Diomede) | ![HTML](https://img.shields.io/badge/HTML-E34C26?style=flat-square&logo=html&logoColor=white) | Dynamic DICOM Endpoint Routing | ⭐ 17 | 🍴 46 | 🚀 511 |
@@ -44,6 +44,7 @@ We build open-source research frameworks in distributed systems, healthcare info
 | [**L4SBOA**](https://github.com/KathiraveluLab/L4SBOA) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | L4S Bandwidth Orchestration Architecture | ⭐ 5 | 🍴 6 | 🚀 245 |
 | [**LAGOS**](https://github.com/KathiraveluLab/LAGOS) | ![Gleam](https://img.shields.io/badge/Gleam-8A8A8A?style=flat-square&logo=gleam&logoColor=white) | Latency-aware Accountable Governance for Overlay Scaling |  |  | 🚀 42 |
 | [**MEDIator**](https://github.com/KathiraveluLab/MEDIator) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | On-Demand Big Data Integration-as-a-Service: A Data Federation Framework for Reproducible Science |  | 🍴 1 | 🚀 380 |
+| [**memories**](https://github.com/KathiraveluLab/memories) | ![JavaScript](https://img.shields.io/badge/JavaScript-F1E05A?style=flat-square&logo=javascript&logoColor=white) | An exploration game inspired by Lisboa |  |  | 🚀 7 |
 | [**messaging4transport**](https://github.com/KathiraveluLab/messaging4transport) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | Message Oriented Middleware for OpenDaylight MD-SAL |  |  | 🚀 30 |
 | [**Metro**](https://github.com/KathiraveluLab/Metro) | ![JavaScript](https://img.shields.io/badge/JavaScript-F1E05A?style=flat-square&logo=javascript&logoColor=white) | A metro map of KathiraveluLab Research |  |  | 🚀 43 |
 | [**Mojito**](https://github.com/KathiraveluLab/Mojito) | ![Mojo](https://img.shields.io/badge/Mojo-FF6700?style=flat-square&logo=mojo&logoColor=white) | Mojo-based Integrated Task Orchestrator |  |  | 🚀 8 |
@@ -73,9 +74,9 @@ We build open-source research frameworks in distributed systems, healthcare info
 ```mermaid
 xychart-beta horizontal
     title "Language Distribution by Code Volume (KB)"
-    x-axis ["Java (23.7%)", "Python (23.6%)", "HTML (13.4%)", "TypeScript (8.6%)", "Elixir (6.3%)", "Jupyter Notebook (5.0%)", "MATLAB (3.9%)", "Erlang (3.3%)", "JavaScript (3.1%)", "CSS (2.1%)", "Cairo (1.7%)", "Shell (1.4%)", "Mojo (1.1%)", "Zig (0.7%)", "Go (0.4%)", "Roc (0.3%)", "Rust (0.3%)", "Gleam (0.2%)", "PowerShell (0.2%)", "Move (0.1%)", "Batchfile (0.1%)", "Solidity (0.1%)", "Dockerfile (0.1%)", "Pony (0.1%)", "Makefile (0.0%)", "C (0.0%)", "Noir (0.0%)", "Gnuplot (0.0%)", "Clarity (0.0%)", "Leo (0.0%)"]
+    x-axis ["Java (23.1%)", "Python (23.1%)", "HTML (13.2%)", "TypeScript (8.4%)", "Elixir (6.3%)", "JavaScript (5.0%)", "Jupyter Notebook (4.9%)", "MATLAB (3.8%)", "Erlang (3.2%)", "CSS (2.2%)", "Cairo (1.7%)", "Shell (1.4%)", "Mojo (1.1%)", "Zig (0.6%)", "Go (0.4%)", "Roc (0.3%)", "Rust (0.3%)", "Gleam (0.2%)", "PowerShell (0.2%)", "Move (0.1%)", "Batchfile (0.1%)", "Solidity (0.1%)", "Dockerfile (0.1%)", "Pony (0.1%)", "Makefile (0.0%)", "C (0.0%)", "Noir (0.0%)", "Gnuplot (0.0%)", "Clarity (0.0%)", "Leo (0.0%)"]
     y-axis "KB"
-    bar [2094.5, 2089.51, 1185.41, 763.92, 558.82, 446.91, 343.93, 289.93, 276.36, 189.89, 151.31, 127.55, 99.52, 58.03, 32.03, 30.88, 28.25, 18.9, 13.91, 12.89, 8.48, 6.65, 6.34, 6.01, 3.74, 2.58, 2.46, 1.82, 1.53, 0.26]
+    bar [2094.5, 2089.51, 1194.64, 763.92, 573.78, 450.69, 446.91, 343.93, 289.93, 202.6, 151.31, 127.55, 99.52, 58.12, 32.03, 30.88, 28.25, 18.9, 13.91, 12.89, 8.48, 6.65, 6.34, 6.01, 3.74, 2.58, 2.46, 1.82, 1.53, 0.26]
 ```
 <!-- LANG-CHART:END -->
 
@@ -92,7 +93,7 @@ xychart-beta horizontal
 <!-- CONTRIBUTORS:START -->
 <table style="border-collapse: collapse; border: none;">
   <tr>
-    <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/pradeeban"><img src="https://avatars.githubusercontent.com/u/225631?v=4" width="100px;" alt="pradeeban" style="border-radius: 50%;"/><br /><sub><b>pradeeban</b></sub></a><br /><sub>2900 contributions</sub></td>
+    <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/pradeeban"><img src="https://avatars.githubusercontent.com/u/225631?v=4" width="100px;" alt="pradeeban" style="border-radius: 50%;"/><br /><sub><b>pradeeban</b></sub></a><br /><sub>2909 contributions</sub></td>
     <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/iprasannamb"><img src="https://avatars.githubusercontent.com/u/187874908?v=4" width="100px;" alt="iprasannamb" style="border-radius: 50%;"/><br /><sub><b>iprasannamb</b></sub></a><br /><sub>224 contributions</sub></td>
     <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/mdxabu"><img src="https://avatars.githubusercontent.com/u/115330277?v=4" width="100px;" alt="mdxabu" style="border-radius: 50%;"/><br /><sub><b>mdxabu</b></sub></a><br /><sub>175 contributions</sub></td>
     <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/dakshhhhh16"><img src="https://avatars.githubusercontent.com/u/213169480?v=4" width="100px;" alt="dakshhhhh16" style="border-radius: 50%;"/><br /><sub><b>dakshhhhh16</b></sub></a><br /><sub>173 contributions</sub></td>
