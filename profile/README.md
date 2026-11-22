@@ -7,11 +7,11 @@ We build open-source research frameworks in distributed systems, healthcare info
 ## 🔬 Projects
 
 <!-- REPO-LIST:START -->
-> Last updated: 2026-11-22 07:05 UTC · 56 active public repositories
+> Last updated: 2026-11-22 19:50 UTC · 56 active public repositories
 
 | Repository | Language | Description | Stars | Forks | Commits |
 | --- | :---: | --- | :---: | :---: | :---: |
-| [**.github**](https://github.com/KathiraveluLab/.github) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | .github repository | ⭐ 1 | 🍴 1 | 🚀 476 |
+| [**.github**](https://github.com/KathiraveluLab/.github) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | .github repository | ⭐ 1 | 🍴 1 | 🚀 477 |
 | [**3-Chess**](https://github.com/KathiraveluLab/3-Chess) | ![Elixir](https://img.shields.io/badge/Elixir-6E4A7E?style=flat-square&logo=elixir&logoColor=white) | A 3-player chess game |  |  | 🚀 8 |
 | [**Acer-Swift-Go-16-AI-Bugs**](https://github.com/KathiraveluLab/Acer-Swift-Go-16-AI-Bugs) | ![PowerShell](https://img.shields.io/badge/PowerShell-8A8A8A?style=flat-square&logo=powershell&logoColor=white) | Bugs encountered in Acer Swift Go 16 AI |  |  | 🚀 3 |
 | [**AirportSim**](https://github.com/KathiraveluLab/AirportSim) | ![Elixir](https://img.shields.io/badge/Elixir-6E4A7E?style=flat-square&logo=elixir&logoColor=white) | CSCEA365-Assignment-1 |  |  | 🚀 4 |
@@ -75,9 +75,9 @@ We build open-source research frameworks in distributed systems, healthcare info
 ```mermaid
 xychart-beta horizontal
     title "Language Distribution by Code Volume (KB)"
-    x-axis ["Java (20.2%)", "Python (20.1%)", "JavaScript (14.5%)", "HTML (11.6%)", "Elixir (8.0%)", "TypeScript (7.4%)", "Jupyter Notebook (4.3%)", "MATLAB (3.3%)", "Erlang (2.8%)", "CSS (2.0%)", "Cairo (1.5%)", "Shell (1.2%)", "Mojo (1.0%)", "Zig (0.6%)", "Go (0.3%)", "Roc (0.3%)", "Rust (0.3%)", "Gleam (0.2%)", "PowerShell (0.1%)", "Move (0.1%)", "Batchfile (0.1%)", "Solidity (0.1%)", "Dockerfile (0.1%)", "Pony (0.1%)", "Makefile (0.0%)", "C (0.0%)", "Noir (0.0%)", "Gnuplot (0.0%)", "Clarity (0.0%)", "Leo (0.0%)"]
+    x-axis ["Java (20.1%)", "Python (20.1%)", "JavaScript (14.5%)", "HTML (11.6%)", "Elixir (8.0%)", "TypeScript (7.3%)", "Jupyter Notebook (4.3%)", "MATLAB (3.3%)", "Erlang (2.8%)", "CSS (2.0%)", "Cairo (1.5%)", "Shell (1.2%)", "Mojo (1.0%)", "Zig (0.6%)", "Go (0.3%)", "Roc (0.3%)", "Rust (0.3%)", "Gleam (0.2%)", "PowerShell (0.1%)", "Move (0.1%)", "Batchfile (0.1%)", "Solidity (0.1%)", "Dockerfile (0.1%)", "Pony (0.1%)", "Makefile (0.0%)", "C (0.0%)", "Noir (0.0%)", "Gnuplot (0.0%)", "Clarity (0.0%)", "Leo (0.0%)"]
     y-axis "KB"
-    bar [2094.5, 2089.51, 1505.21, 1201.3, 830.13, 763.92, 446.91, 343.93, 289.93, 210.03, 151.31, 127.55, 99.52, 58.12, 32.03, 30.88, 28.25, 18.9, 13.91, 12.89, 8.48, 6.65, 6.34, 6.01, 3.74, 2.58, 2.46, 1.82, 1.53, 0.26]
+    bar [2094.5, 2089.51, 1511.33, 1201.3, 830.13, 763.92, 446.91, 343.93, 289.93, 210.03, 151.31, 127.55, 99.52, 58.12, 32.03, 30.88, 28.25, 18.9, 13.91, 12.89, 8.48, 6.65, 6.34, 6.01, 3.74, 2.58, 2.46, 1.82, 1.53, 0.26]
 ```
 <!-- LANG-CHART:END -->
 
