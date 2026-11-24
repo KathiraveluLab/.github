@@ -7,11 +7,11 @@ We build open-source research frameworks in distributed systems, healthcare info
 ## 🔬 Projects
 
 <!-- REPO-LIST:START -->
-> Last updated: 2026-11-24 10:04 UTC · 56 active public repositories
+> Last updated: 2026-11-24 22:35 UTC · 56 active public repositories
 
 | Repository | Language | Description | Stars | Forks | Commits |
 | --- | :---: | --- | :---: | :---: | :---: |
-| [**.github**](https://github.com/KathiraveluLab/.github) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | .github repository | ⭐ 1 | 🍴 1 | 🚀 480 |
+| [**.github**](https://github.com/KathiraveluLab/.github) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | .github repository | ⭐ 1 | 🍴 1 | 🚀 481 |
 | [**3-Chess**](https://github.com/KathiraveluLab/3-Chess) | ![Elixir](https://img.shields.io/badge/Elixir-6E4A7E?style=flat-square&logo=elixir&logoColor=white) | A 3-player chess game |  |  | 🚀 8 |
 | [**Acer-Swift-Go-16-AI-Bugs**](https://github.com/KathiraveluLab/Acer-Swift-Go-16-AI-Bugs) | ![PowerShell](https://img.shields.io/badge/PowerShell-8A8A8A?style=flat-square&logo=powershell&logoColor=white) | Bugs encountered in Acer Swift Go 16 AI |  |  | 🚀 3 |
 | [**AirportSim**](https://github.com/KathiraveluLab/AirportSim) | ![Elixir](https://img.shields.io/badge/Elixir-6E4A7E?style=flat-square&logo=elixir&logoColor=white) | CSCEA365-Assignment-1 |  |  | 🚀 4 |
@@ -56,7 +56,7 @@ We build open-source research frameworks in distributed systems, healthcare info
 | [**RocK**](https://github.com/KathiraveluLab/RocK) | ![Elixir](https://img.shields.io/badge/Elixir-6E4A7E?style=flat-square&logo=elixir&logoColor=white) | Roc-based blocks |  |  | 🚀 4 |
 | [**sanfrancisco**](https://github.com/KathiraveluLab/sanfrancisco) | — | Data Mining Course Project | ⭐ 1 | 🍴 24 | 🚀 3 |
 | [**SD-CPS**](https://github.com/KathiraveluLab/SD-CPS) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | Software-Defined Cyber-Physical Systems |  |  | 🚀 53 |
-| [**SDDS**](https://github.com/KathiraveluLab/SDDS) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | Software-Defined Data Services |  | 🍴 1 | 🚀 22 |
+| [**SDDS**](https://github.com/KathiraveluLab/SDDS) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | Software-Defined Data Services |  | 🍴 1 | 🚀 24 |
 | [**SENDIM**](https://github.com/KathiraveluLab/SENDIM) | ![Java](https://img.shields.io/badge/Java-B07219?style=flat-square&logo=java&logoColor=white) | A Simulation, Emulation, aNd Deployment Integration Middleware for cloud networks. |  |  | 🚀 14 |
 | [**SFILS**](https://github.com/KathiraveluLab/SFILS) | — | An integrated library system for the San Francisco Public Library. |  | 🍴 38 | 🚀 10 |
 | [**Sintra**](https://github.com/KathiraveluLab/Sintra) | ![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) | Self-adaptive Interdomain Network Transport for Real-Time Applications | ⭐ 3 | 🍴 6 | 🚀 108 |
@@ -94,7 +94,7 @@ xychart-beta horizontal
 <!-- CONTRIBUTORS:START -->
 <table style="border-collapse: collapse; border: none;">
   <tr>
-    <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/pradeeban"><img src="https://avatars.githubusercontent.com/u/225631?v=4" width="100px;" alt="pradeeban" style="border-radius: 50%;"/><br /><sub><b>pradeeban</b></sub></a><br /><sub>2977 contributions</sub></td>
+    <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/pradeeban"><img src="https://avatars.githubusercontent.com/u/225631?v=4" width="100px;" alt="pradeeban" style="border-radius: 50%;"/><br /><sub><b>pradeeban</b></sub></a><br /><sub>2978 contributions</sub></td>
     <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/iprasannamb"><img src="https://avatars.githubusercontent.com/u/187874908?v=4" width="100px;" alt="iprasannamb" style="border-radius: 50%;"/><br /><sub><b>iprasannamb</b></sub></a><br /><sub>224 contributions</sub></td>
     <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/mdxabu"><img src="https://avatars.githubusercontent.com/u/115330277?v=4" width="100px;" alt="mdxabu" style="border-radius: 50%;"/><br /><sub><b>mdxabu</b></sub></a><br /><sub>175 contributions</sub></td>
     <td align="center" style="border: none; padding: 10px;"><a href="https://github.com/dakshhhhh16"><img src="https://avatars.githubusercontent.com/u/213169480?v=4" width="100px;" alt="dakshhhhh16" style="border-radius: 50%;"/><br /><sub><b>dakshhhhh16</b></sub></a><br /><sub>173 contributions</sub></td>
